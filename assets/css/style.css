@@ -20,3 +20,30 @@
     --white: #fff;
     --gray: #adb5bd;
   }
+
+  body{
+    width: 100vw;
+    height: 100vh;
+  }
+
+  /* encabezado y parrafo de gallery */
+
+  div .head-gallery{
+    width: 80vw;
+    text-align: center;
+    margin: 2em auto;
+  }
+
+  div .head-gallery h2{
+    margin-bottom: .8em;
+  }
+
+  div .images-gallery{
+    width: 100%vw;
+    display: flex;
+  }
+
+  img {
+    width: 100vw;
+    height: auto;
+  }
