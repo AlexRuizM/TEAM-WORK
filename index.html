@@ -6,76 +6,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-<!-- comienzo gallery -->
+    <!-- comienzo gallery -->
     <div class="gallery-division">
-<!-- encabezado y parrafo -->
-        <div class="head-gallery">
-          <h2>Gallery</h2>
-          <p>This is a <span class="bold">Gallery</span> component. It can behave as a lightbox (when given the <span class="lightbox">lightbox</span> class), and you can customise its appearance with a numbers of modifiers, as well as assing it an aptional <span class="lightbox">onload</span> or <span class="lightbox">onscroll</span> transition modifier <a href="#" class="underline">(details)</a></p>
-        </div>
-<!-- carrete de fotos -->
-        <div class="images-gallery">
-            <img src="img/gallery/thumbs/01.jpg" alt="ojo azul">
-            <img src="img/gallery/thumbs/02.jpg" alt="hombre flotando en el mar">
-            <img src="img/gallery/thumbs/03.jpg" alt="teclado de ordenador">
-            <img src="img/gallery/thumbs/04.jpg" alt="cubo de rubik hexagonal">
-        </div>
+      <!-- encabezado y parrafo -->
+      <div class="head-gallery">
+        <h2>Gallery</h2>
+        <p>
+          This is a <span class="bold">Gallery</span> component. It can behave
+          as a lightbox (when given the
+          <span class="lightbox">lightbox</span> class), and you can customise
+          its appearance with a numbers of modifiers, as well as assing it an
+          aptional <span class="lightbox">onload</span> or
+          <span class="lightbox">onscroll</span> transition modifier
+          <a href="#" class="underline">(details)</a>
+        </p>
+      </div>
+      <!-- carrete de fotos -->
+      <div class="images-gallery">
+        <img src="img/gallery/thumbs/01.jpg" alt="ojo azul" />
+        <img src="img/gallery/thumbs/02.jpg" alt="hombre flotando en el mar" />
+        <img src="img/gallery/thumbs/03.jpg" alt="teclado de ordenador" />
+        <img src="img/gallery/thumbs/04.jpg" alt="cubo de rubik hexagonal" />
+      </div>
     </div>
-<!-- fin de seccion Gallery -->
-<!-- comienzo seccion items -->
+    <!-- fin de seccion Gallery -->
+    <!-- comienzo seccion items -->
     <div class="items-division">
-<!-- encabezado y parrafo-->
-        <div class="head-items">
-            <h2>Items</h2>
-            <p>This is an <span class="bold">Items</span> component, and it's essentially a grid for organising elements of various types. You can customize it appearance with a choice of modifiers, as well as assing it an optional <span class="lightbox">onload</span> or <span class="lightbox">onscroll</span> transition modifier <a href="#">(details)</a></p>
-        </div>
-<!-- comienzo items grid -->
-        <div class="items-layout">
-          <div class="box"><i class="fa-regular fa-gem">
+      <!-- encabezado y parrafo-->
+      <div class="head-items">
+        <h2>Items</h2>
+        <p>
+          This is an <span class="bold">Items</span> component, and it's
+          essentially a grid for organising elements of various types. You can
+          customize it appearance with a choice of modifiers, as well as assing
+          it an optional <span class="lightbox">onload</span> or
+          <span class="lightbox">onscroll</span> transition modifier
+          <a href="#">(details)</a>
+        </p>
+      </div>
+      <!-- comienzo items grid -->
+      <div class="items-layout">
+        <div class="box">
+          <i class="fa-regular fa-gem">
             <h5>One</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora vel nostrum temporibus animi illum iure id labore enim voluptatibus? Magni neque illum reiciendis inventore culpa.</p>
-          </i></div>
-          <div class="box"><i class="fa-solid fa-floppy-disk">
-            <h5>Two</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptates, vitae, exercitationem officia aliquam error temporibus sit quod quae ab voluptatum nulla placeat, repellat maxime.</p>
-          </i></div>
-          <div class="box"><i class="fa-solid fa-chart-column">
-            <h5>Three</h5>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, libero perferendis. Quas quibusdam reiciendis accusantium. Earum blanditiis quibusdam dolor eos. Neque iure ullam corrupti sequi?</p>
-          </i></div>
-          <div class="box"><i class="fa-solid fa-wifi">
-            <h5>Four</h5>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora nesciunt commodi numquam cum, inventore obcaecati laboriosam quo, perferendis quae nisi nihil ipsam repellendus voluptatibus nemo?</p>
-          </i></div>
-          <div class="box"><i class="fa-solid fa-gear">
-            <h5>Five</h5>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem vitae sit illo illum doloremque nam, itaque iusto! Error soluta eius ut id dicta et. At id quaerat dignissimos odit obcaecati.</p>
-          </i></div>
-          <div class="box"><i class="fa-regular fa-paper-plane">
-            <h5>Six</h5>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam voluptatibus ad deserunt asperiores maiores est esse consectetur perferendis assumenda eos, praesentium atque, dolores et vitae?</p>
-          </i></div>
-          <div class="box"><i class="fa-solid fa-desktop">
-            <h5>Seven</h5>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, nobis provident. A molestias corrupti dolorem, at laboriosam quae, consequuntur nisi nihil sint explicabo voluptas iste?</p>
-          </i></div>
-          <div class="box"><i class="fa-solid fa-rotate">
-            <h5>Eight</h5>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae animi qui quas dolore non! Nam praesentium veritatis facilis eum laboriosam mollitia in quam adipisci aliquam.</p>
-          </i></div>
-          <div class="box"><i class="fa-solid fa-hashtag">
-            <h5>Nine</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, maxime. Enim, non maxime fugiat sunt asperiores vitae atque iste? Assumenda cum explicabo facilis magni libero.</p>
-          </i></div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              vel nostrum temporibus animi illum iure id labore enim
+              voluptatibus? Magni neque illum reiciendis inventore culpa.
+            </p>
+          </i>
         </div>
-<!-- fin de items -->
+        <div class="box">
+          <i class="fa-solid fa-floppy-disk">
+            <h5>Two</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+              voluptates, vitae, exercitationem officia aliquam error temporibus
+              sit quod quae ab voluptatum nulla placeat, repellat maxime.
+            </p>
+          </i>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-chart-column">
+            <h5>Three</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem,
+              libero perferendis. Quas quibusdam reiciendis accusantium. Earum
+              blanditiis quibusdam dolor eos. Neque iure ullam corrupti sequi?
+            </p>
+          </i>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-wifi">
+            <h5>Four</h5>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+              nesciunt commodi numquam cum, inventore obcaecati laboriosam quo,
+              perferendis quae nisi nihil ipsam repellendus voluptatibus nemo?
+            </p>
+          </i>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-gear">
+            <h5>Five</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Exercitationem vitae sit illo illum doloremque nam, itaque iusto!
+              Error soluta eius ut id dicta et. At id quaerat dignissimos odit
+              obcaecati.
+            </p>
+          </i>
+        </div>
+        <div class="box">
+          <i class="fa-regular fa-paper-plane">
+            <h5>Six</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
+              voluptatibus ad deserunt asperiores maiores est esse consectetur
+              perferendis assumenda eos, praesentium atque, dolores et vitae?
+            </p>
+          </i>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-desktop">
+            <h5>Seven</h5>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem,
+              nobis provident. A molestias corrupti dolorem, at laboriosam quae,
+              consequuntur nisi nihil sint explicabo voluptas iste?
+            </p>
+          </i>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-rotate">
+            <h5>Eight</h5>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae
+              animi qui quas dolore non! Nam praesentium veritatis facilis eum
+              laboriosam mollitia in quam adipisci aliquam.
+            </p>
+          </i>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-hashtag">
+            <h5>Nine</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+              maxime. Enim, non maxime fugiat sunt asperiores vitae atque iste?
+              Assumenda cum explicabo facilis magni libero.
+            </p>
+          </i>
+        </div>
+      </div>
+      <!-- fin de items -->
     </div>
-
-
   </body>
-  <script src="https://kit.fontawesome.com/3d3a3461c1.js" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/b20c74decf.js" crossorigin="anonymous"></script>
+  <script
+    src="https://kit.fontawesome.com/3d3a3461c1.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://kit.fontawesome.com/b20c74decf.js"
+    crossorigin="anonymous"
+  ></script>
 </html>
