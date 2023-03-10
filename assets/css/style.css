@@ -20,13 +20,8 @@
   --gray: #adb5bd;
 }
 
-.principaliconos {
-  display: flex;
-}
-
-div .imgsurf {
-  image-orientation: 0, 0, 0;
-  height: 0.5em;
-
-
+div .principaliconos {
+  display: grid;
+/*   grid-column: 1fr;
+  grid-row: 1fr; */
 }
