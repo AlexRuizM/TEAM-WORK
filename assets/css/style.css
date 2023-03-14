@@ -1,10 +1,12 @@
   
-  * {
-    margin: 0;
+  *l.Fit {
+    position: static; top: 10%; left: 50%;
+    margin: 100;
     padding: 0;
     border: 0;
     outline: none;
   }
+  
   
 :root {
     --blue: #0d6efd;
@@ -20,3 +22,27 @@
     --white: #fff;
     --gray: #adb5bd;
   }
+
+.Left {
+  image-resolution: 0%;
+  image-orientation: 0,0,0;
+  object-position: left;
+  text-align: left;
+  align-content:normal;
+}
+ .Right {
+  image-resolution: 0%;
+  image-orientation: 0,0,0;
+  object-position: right;
+  text-align: right;
+  align-content: end;
+}
+.Der{text-align: left;}
+.Izq{text-align: right;}
+.Izqimg{align-items:end ;}
+
+
+
+
+
+
