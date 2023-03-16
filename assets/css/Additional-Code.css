@@ -1,20 +1,55 @@
+
+
 body{
- 
-    
-}
-.additional-elements{
-text-align: center;
+    font-family: 'Raleway', sans-serif;
+
 }
 
-.text {
+.todo{
     display: grid;
-    grid-template-columns: 25% 70%; 
+    grid-template-columns: 25% 75%;
+    margin: auto;
+    grid-gap: 0.5em 1em #cccccc;  
+   }
+
+   
+.additional {
+    text-align: center;
+    padding-bottom: 10%;
+    padding-top: 10%;
+   
+   
 }
-.headings {
-    display: grid;
-    grid-template-columns: 25% 70%;
-    
+.left{
+    padding-top: 1em;
+    margin: auto;
+    justify-content: left;
+    font-size: 2em;
+    font-weight: 300;
+    color: #2e2e2e;
+    letter-spacing: -0.2rem;
+    margin-top: 2em;
+    text-align: center;
+   
+   
+}
+.right{
+justify-content: right;
+padding-top: 3em;
+
 }
 
+
+
+
+
+
+
+.for{
+    background: #ecf0f1;
+}
+.while{
+    background: #ecf0f1;
+}
 
 
