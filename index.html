@@ -108,23 +108,23 @@
         <h3 class="h3texto">Form</h3>
         <form>
           <div>
-            <label>Name<input type="text" name="Firstname"/></label>
-            <label>Email<input type="email" name="email"/></label>
+            <label>Name<input type="text" name="inputs"/></label>
+            <label>Email<input type="email" name="inputs"/></label>
           </div>
           <div class="selector" >
-            <input type="select">Departament
+            <input type="select" >Departament
             <select id="Category">
               <option value="1">-Category-</option>
-              <option value="1">Manufacturing</option>
-              <option value="1">Shipping</option>
-              <option value="1">Administration</option>
-              <option value="1">Human Resources</option></label>
+              <option value="2">Manufacturing</option>
+              <option value="3">Shipping</option>
+              <option value="4">Administration</option>
+              <option value="5">Human Resources</option>
             </select>
           </div>
           <div class="radios">
-            <input type="radio"/>Low Priority
-            <input type="radio"/>Normal Priority
-            <input type="radio"/> High Priority
+            <input class="radio" name="radio" type="radio"/>Low Priority
+            <input class="radio" name="radio" type="radio"/>Normal Priority
+            <input class="radio" name="radio" type="radio"/> High Priority
           </div>
           <span>Message</span>
             <textarea name="" id="" cols="40" rows="6"></textarea>
@@ -176,7 +176,7 @@
           <td>100.00</td>
         </table>
         <table>
-          <span>Alternate</span>
+          <span class="span">Alternate</span>
           <tr>
             <th>Name</th>
             <th>Description</th>

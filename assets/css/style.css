@@ -4,7 +4,6 @@
   border: 0;
   outline: none;
 }
-
 :root {
   --blue: #0d6efd;
   --indigo: #6610f2;
@@ -43,6 +42,9 @@ div.principaliconos {
 div.iconosnormales i {
   padding: 0.5em;
 }
+div.iconosnormales i:hover {
+  color: var(--cyan);
+}
 div.iconoscirculo i {
   width: 1em;
   height: 1em;
@@ -51,6 +53,10 @@ div.iconoscirculo i {
   border: 1.5px solid gainsboro;
   border-radius: 50%;
   margin: 0.3em;
+}
+div.iconoscirculo i:hover {
+  color: var(--cyan);
+  border: 1.5px solid var(--cyan);
 }
 h3.h3texto {
   text-align: left;
@@ -77,6 +83,9 @@ div button {
 }
 div button:active {
   transform: scale(0.95);
+}
+div button:hover {
+  background-color: var(--cyan);
 }
 div.buttons1 button {
   padding: 1em 1.5em;
@@ -132,6 +141,9 @@ div.factions {
   grid-template-columns: 1fr 3fr;
   grid-column-gap: 1em;
 }
+div.factions button:hover {
+  background-color: var(--cyan);
+}
 div.actions1 button {
   padding: 1em 1.5em;
   margin: 1em 1em 3em 0;
@@ -154,10 +166,10 @@ div.actions1 button {
   margin: 1em 1em 3em 0;
   width: 6em;
 }
-.astacked button{
+.astacked button {
   margin: 1em 1em 1em 0;
 }
-.astacked button:first-of-type{
+.astacked button:first-of-type {
   color: white;
   background-color: black;
 }
@@ -167,14 +179,14 @@ div.actions1 button {
   margin: 1em 1em 0em 0;
   width: 22em;
 }
-.astackedfit button{
+.astackedfit button {
   margin: 1em 1em 0 0;
 }
-.astackedfit button:first-of-type{
+.astackedfit button:first-of-type {
   color: white;
   background-color: black;
 }
-div.fform{
+div.fform {
   text-align: left;
   width: 75%;
   margin: auto;
@@ -184,38 +196,42 @@ div.fform{
   grid-template-columns: 1fr 3fr;
   grid-column-gap: 1em;
 }
-label input{
+div label input {
   border: 1px solid #ececec;
+}
+div label input:focus {
+  border: 1px solid var(--cyan);
 }
 textarea {
   border: 1px solid #ececec;
+  border-radius: 0.3em;
+  padding: 1em;
+  margin-bottom: 1em;
 }
-form div{
+textarea:focus {
+  border: 1.5px solid var(--cyan);
+}
+form div {
   display: flex;
   flex-direction: row;
 }
-form div label input{
+form div label input {
   border-radius: 0.2em;
   padding: 0.2em 0;
   margin-top: 1em;
   margin-bottom: 2em;
 }
-div form div.selector{
+div form div.selector {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
-div.radios{
+div.radios {
   font-size: 0.8em;
-}
-div.radios input{
-  margin-right: 2em;
+  margin-bottom: 1em;
 }
 
-
-
-
-div.ftable{
+div.ftable {
   text-align: left;
   width: 75%;
   margin: auto;
