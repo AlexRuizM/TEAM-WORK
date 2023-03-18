@@ -21,16 +21,16 @@
     --gray: #adb5bd;
   }
 
-header{
+/*   He añadido la class "dani" al header para evitar posibles problemas con otros headers de la web.
+ */
+.dani{
   font-family: 'Source Sans Pro', sans-serif;
-}
-header img{
-  max-width: 50vw; 
 }
 .banner{
   display: flex;
   width: 100vw;
   height: 115vh;
+  border-bottom: .2px solid lightgrey;
 }
 .img-banner img{
   width: 50vw;
@@ -43,26 +43,32 @@ header img{
   padding: 0 6em;
 } 
 .text-banner h1{
-  font-size: 4rem;
+  font-size: 5rem;
 }
 .text-banner .p1 {
   font-size: 1.9rem;
   font-weight: 300;
-  line-height: 2.5rem;
+  line-height: 3rem;
 }
 .text-banner .p2{
+  margin-top: 1.5em;
   font-weight: 300;
   font-size: 1.6rem;
   line-height: 2.5rem;
 }
-.word{  /* Esta class .word afecta en todas las secciones para el efecto de las palabras "onload" y "onscroll".*/
+/* Esta class .word afecta en todas las secciones para el efecto de las palabras "onload" y "onscroll".*/
+.word{  
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.4rem;
+  font-weight:300 ;
   background-color: #F2F2F2;
   border-radius: .2em;
-  padding: .1rem .3rem;
-}
+  padding: .2rem .5rem; 
+  margin: 0 .3rem;
+} 
 .text-banner button{
   border: 2px solid #DADADA;
-  padding: 1em 2.5em;
+  padding: 1em 3em;
   margin-top: 1.3em;
   background-color: white;
   border-radius: 2em;
@@ -72,12 +78,12 @@ header img{
   letter-spacing: .15rem;
 }
 
-/* "header a" y "header button" afectan a los links y a los botones de todo el header*/
- header a:hover{
+/* ".dani a" y ".dani button" afectan a los links y a los botones de todo el header*/
+.dani a:hover{
   color: #A3E9F2;
   text-decoration: none;
 }
-header button:hover{
+.dani button:hover{
   color: #A3E9F2;
   text-decoration: none;
   border: 2px solid #A3E9F2;
@@ -91,6 +97,7 @@ Pasamos a la sección 2: "spotlight1".
   display: flex;
   width: 100vw;
   height: 60vh;
+  border-bottom: .2px solid lightgrey;
 }
  .img-spotlight01 img{
    width: 35vw;
@@ -127,12 +134,84 @@ Pasamos a la sección 2: "spotlight1".
 Pasamos a la sección 3: "spotlight2".
  */
 
-
-
+ .spotlight2{
+  display: flex;
+  width: 100vw;
+  height: 55vh;
+  border-bottom: .2px solid lightgrey;
+}
+.text-spotlight2{
+  background-color: #FFFFFF;
+  margin: auto;
+  padding: 0 6em;
+}
+ .img-spotlight02 img{
+   width: 35vw;
+   height: 100%; 
+   object-fit: cover;
+  }
+ .text-spotlight2 h2{
+  font-size: 3rem;
+  font-weight: 300;
+}
+.text-spotlight2 p{
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+.text-spotlight2 button{
+  border: 2px solid #DADADA;
+  padding: 1em 2.5em;
+  margin-top: 1.3em;
+  background-color: white;
+  border-radius: 2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: .13rem;
+}
+ 
 /* Todo este css es para la tercera sección: "spotlight2". 
 Pasamos a la sección 4: "spotlight3".
  */
-
+ .spotlight3{
+  display: flex;
+  width: 100vw;
+  height: 60vh;
+  border-bottom: .2px solid lightgrey;
+}
+.text-spotlight3{
+  background-color: #FFFFFF;
+  margin: auto;
+  padding: 0 6em;
+}
+ .img-spotlight03 img{
+   width: 35vw;
+   height: 100%; 
+   object-fit: cover;
+}
+ .text-spotlight3 h2{
+  font-size: 3rem;
+  font-weight: 300;
+}
+.text-spotlight3 p{
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+.text-spotlight3 button{
+  border: 2px solid #DADADA;
+  padding: 1em 2.5em;
+  margin-top: 1.3em;
+  background-color: white;
+  border-radius: 2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: .13rem;
+}
+/* 
+Final de la última sección. */
 
 
 

@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <script
@@ -20,7 +20,7 @@
   <body>
     <!-- Esta es la parte de Dani. Está formada por el "header", que actúa como contenedor de las 4 secciones "div". Cada uno de los 4 div incluye 2 partes: un div con texto y un div con una imagen. El primer div se llama "banner" y los otros 3: "spotlight1 ,2 y 3" respectivamente.-->
 
-    <header>
+    <header class="dani">
       <!-- Aquí empieza banner, que incluye el primer texto y un tipo saltando al agua.-->
       <div class="banner">
         <div class="text-banner">
@@ -101,16 +101,21 @@
           <h2>Spotlight</h2>
           <br />
           <p>
-            This is also a Spotlight component, and it's here because this app
-            would look a bit empty with just one spotlight. Like all spotlights,
-            you can customise its appearance with a choice of modifiers, as well
-            as assign it an optional onload or onscroll transition modifier
-            (details).
+            This is also a
+            <span style="font-weight: 400">Spotlight</span> component, and it's
+            here because this app would look a bit empty with just one
+            spotlight. Like all spotlights, you can customise its appearance
+            with a choice of modifiers, as well as assign it an optional
+            <span class="word">onload</span> or
+            <span class="word">onscroll</span> transition modifier (<a
+              href="https://www.wordreference.com/es/translation.asp?tranword=detail"
+              >details</a
+            >).
           </p>
           <br />
-          <p>LEARN MORE</p>
+          <button>LEARN MORE</button>
         </div>
-        <div class="img-spotlight2">
+        <div class="img-spotlight02">
           <img src="img/spotlight02.jpg" alt="person waiting in airport" />
         </div>
       </div>
@@ -118,24 +123,30 @@
       <!-- Aquí empieza spotlight3, la cuarta sección, que incluye el cuarto texto y las manitas con el sol.-->
 
       <div class="spotlight3">
-        <div class="text-spotlight3">
-          <h2>Spotlight</h2>
-          <br />
-          <p>
-            And yes, this is also a Spotlight component, and it's also here in
-            order to fill a bit of space. Naturally, like any other spotlights,
-            you can customise its appearance with a choice of modifiers, as well
-            as assign it an optional onload or onscroll transition modifier
-            (details).
-          </p>
-          <br />
-          <p>LEARN MORE</p>
-        </div>
-        <div class="img-spotlight3">
+        <div class="img-spotlight03">
           <img
             src="img/spotlight03.jpg"
             alt="hands forming a heart around sun"
           />
+        </div>
+
+        <div class="text-spotlight3">
+          <h2>Spotlight</h2>
+          <br />
+          <p>
+            And yes, this is also a
+            <span style="font-weight: 400">Spotlight</span> component, and it's
+            also here in order to fill a bit of space. Naturally, like any other
+            spotlights, you can customise its appearance with a choice of
+            modifiers, as well as assign it an optional
+            <span class="word">onload</span> or
+            <span class="word">onscroll</span> transition modifier (<a
+              href="https://www.wordreference.com/es/translation.asp?tranword=detail"
+              >details</a
+            >).
+          </p>
+          <br />
+          <button>LEARN MORE</button>
         </div>
       </div>
     </header>
