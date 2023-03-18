@@ -30,7 +30,7 @@ header img{
 .banner{
   display: flex;
   width: 100vw;
-  height: 100vh;
+  height: 115vh;
 }
 .img-banner img{
   width: 50vw;
@@ -46,16 +46,16 @@ header img{
   font-size: 4rem;
 }
 .text-banner .p1 {
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   font-weight: 300;
   line-height: 2.5rem;
 }
 .text-banner .p2{
   font-weight: 300;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 2.5rem;
 }
-.text-banner .word{
+.word{  /* Esta class .word afecta en todas las secciones para el efecto de las palabras "onload" y "onscroll".*/
   background-color: #F2F2F2;
   border-radius: .2em;
   padding: .1rem .3rem;
@@ -71,11 +71,13 @@ header img{
   font-weight: 400;
   letter-spacing: .15rem;
 }
-.text-banner a:hover{
+
+/* "header a" y "header button" afectan a los links y a los botones de todo el header*/
+ header a:hover{
   color: #A3E9F2;
   text-decoration: none;
 }
-.text-banner button:hover{
+header button:hover{
   color: #A3E9F2;
   text-decoration: none;
   border: 2px solid #A3E9F2;
@@ -85,7 +87,52 @@ header img{
 Pasamos a la sección 2: "spotlight1".
  */
 
- 
+ .spotlight1{
+  display: flex;
+  width: 100vw;
+  height: 60vh;
+}
+ .img-spotlight01 img{
+   width: 35vw;
+   height: 100%; 
+   object-fit: cover;
+ }
+.text-spotlight1{
+  background-color: #FFFFFF;
+  margin: auto;
+  padding: 0 6em;
+ }
+ .text-spotlight1 h2{
+  font-size: 3rem;
+  font-weight: 300;
+}
+ .text-spotlight1 p{
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+.text-spotlight1 button{
+  border: 2px solid #DADADA;
+  padding: 1em 2.5em;
+  margin-top: 1.3em;
+  background-color: white;
+  border-radius: 2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: .13rem;
+}
+
+/* Todo este css es para la segunda sección: "spotlight1". 
+Pasamos a la sección 3: "spotlight2".
+ */
+
+
+
+/* Todo este css es para la tercera sección: "spotlight2". 
+Pasamos a la sección 4: "spotlight3".
+ */
+
 
 
 
