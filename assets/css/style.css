@@ -46,14 +46,14 @@
   font-size: 5rem;
 }
 .text-banner .p1 {
-  font-size: 1.9rem;
+  font-size: 2rem;
   font-weight: 300;
   line-height: 3rem;
 }
 .text-banner .p2{
   margin-top: 1.5em;
   font-weight: 300;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 2.5rem;
 }
 /* Esta class .word afecta en todas las secciones para el efecto de las palabras "onload" y "onscroll".*/
@@ -115,12 +115,12 @@ Pasamos a la sección 2: "spotlight1".
 }
  .text-spotlight1 p{
   font-weight: 300;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 2.5rem;
 }
 .text-spotlight1 button{
   border: 2px solid #DADADA;
-  padding: 1em 2.5em;
+  padding: 1.2em 2.5em;
   margin-top: 1.3em;
   background-color: white;
   border-radius: 2em;
