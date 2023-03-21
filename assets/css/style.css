@@ -41,10 +41,12 @@ div.principaliconos {
 }
 div.iconosnormales i {
   padding: 0.5em;
+  color: black
 }
 div.iconosnormales i:hover {
   color: var(--cyan);
 }
+
 div.iconoscirculo i {
   width: 1em;
   height: 1em;
@@ -53,6 +55,7 @@ div.iconoscirculo i {
   border: 1.5px solid gainsboro;
   border-radius: 50%;
   margin: 0.3em;
+  color: black
 }
 div.iconoscirculo i:hover {
   color: var(--cyan);
@@ -218,7 +221,7 @@ form div {
 }
 form div label input {
   border-radius: 0.2em;
-  padding: 0.2em 0;
+  padding: 0.2em 0em;
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -281,4 +284,17 @@ div.ftable table.cuadros tr:last-child > td {
 div.ftable table th{
   text-align: center;
   padding: 1em;
+}
+form button.disabled{
+  margin-top: 3em;
+  padding: 1em 1.8em;
+} 
+div.checks{
+  justify-content: space-between;
+}
+div label.checkbox{
+  font-size: .8rem;
+}
+label.checkbox input{
+  margin-right: .8em;
 }
