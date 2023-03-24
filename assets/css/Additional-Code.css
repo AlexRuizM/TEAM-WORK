@@ -1,10 +1,16 @@
-
-
+/*En el body pongo la font-family: 'Raleway', sans-serif; para que todo tenga el mismo tipo de letra*/
 body{
     font-family: 'Raleway', sans-serif;
-   
-    
+     
 }
+
+
+/* En el div1principa que dentro esta todo, pongo un width especifico y margin para que todo tenga una anchura y un margen especifico*/
+.div1principal{
+    width: 75%;
+    margin: auto;
+}
+
 .lineaFuera{
      
       border-bottom: 
@@ -48,7 +54,7 @@ a{
     color: #2e2e2e;
     letter-spacing: -0.2rem;
     margin-top: 2em;
-    text-align: center;
+    text-align: left;
    
    
 }
@@ -67,7 +73,7 @@ margin-bottom: 2em;
 }
 .while{
     background: #ecf0f1;
-    width: 55%;
+    width:75%;
 }
 
 
