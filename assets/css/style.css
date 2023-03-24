@@ -18,8 +18,10 @@
   --white: #fff;
   --gray: #adb5bd;
   font-size: 0.785rem;
-  font-family: "Inter", sans-serif;
+  font-family: "Source Sans Pro", "Inter", sans-serif;
+  font-weight: 200;
 }
+/* Iconos */
 span.style2 {
   display: block;
   margin-bottom: 1em;
@@ -64,6 +66,7 @@ div.iconoscirculo i:hover {
 h3.h3texto {
   text-align: left;
 }
+/*  Botones */
 div.fbuttons {
   text-align: left;
   width: 75%;
@@ -134,6 +137,7 @@ div.buttons6 button {
   padding: 1em 1.7em;
   margin: 1em;
 }
+/* Actions */
 div.factions {
   text-align: left;
   width: 75%;
@@ -189,6 +193,8 @@ div.actions1 button {
   color: white;
   background-color: black;
 }
+/* Formulario */
+
 div.fform {
   text-align: left;
   width: 75%;
@@ -199,16 +205,17 @@ div.fform {
   grid-template-columns: 1fr 3fr;
   grid-column-gap: 1em;
 }
-div label input {
+form div div input{
   border: 1px solid #ececec;
+  margin-right: 2em;
 }
-div label input:focus {
+form div input:focus {
   border: 1px solid var(--cyan);
 }
 textarea {
   border: 1px solid #ececec;
   border-radius: 0.3em;
-  padding: 1em;
+  padding: 3em;
   margin-bottom: 1em;
   margin-top: 1em;
 }
@@ -219,7 +226,8 @@ form div {
   display: flex;
   flex-direction: row;
 }
-form div label input {
+
+form div input{
   border-radius: 0.2em;
   padding: 0.2em 0em;
   margin-top: 1em;
@@ -247,10 +255,24 @@ div.radios {
   justify-content: space-between;
 }
 div.radios div input{
+  margin-block: initial;
   margin-right: .6em;
+}
+div.checks{
+  justify-content: space-between;
+}
+div label.checkbox{
+  font-size: .8rem;
+}
+label.checkbox input{
+  margin-right: 1em;
   
 }
+/* label.checkbox input:last-of-type{
+margin-left: 2em;
+} */
 
+/* Tabla */
 div.ftable {
   text-align: left;
   width: 75%;
@@ -289,12 +311,3 @@ form button.disabled{
   margin-top: 3em;
   padding: 1em 1.8em;
 } 
-div.checks{
-  justify-content: space-between;
-}
-div label.checkbox{
-  font-size: .8rem;
-}
-label.checkbox input{
-  margin-right: .8em;
-}
