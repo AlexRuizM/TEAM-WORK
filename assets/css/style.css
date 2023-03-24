@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-:root{
+:root {
   --blue: #0d6efd;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -23,49 +23,50 @@
   font-family: "Rubik", sans-serif;
 }
 
-body{
-  width: 100vw;
-  height: 100vh;
-  font-family:'Inter', sans-serif;
+body {
+  /* width: 100vw; */
+  max-width: 1400px;
+  /* height: 100vh; */
+  margin: auto;
+  font-family: "Inter", sans-serif;
 }
 
 /* container general gallery */
 
-div.gallery-division{
+div.gallery-division {
   margin-top: 4.5em;
 }
 
 /* encabezado y parrafo de gallery */
 
-div.head-gallery{
+div.head-gallery {
   width: 70vw;
   text-align: center;
   margin: 2em auto;
 }
 
-div.head-gallery h2{
+div.head-gallery h2 {
   margin-bottom: 0.8em;
   font-size: 2em;
   font-weight: 200;
 }
 
-div.head-gallery p{
+div.head-gallery p {
   line-height: 1.7em;
   font-size: 0.9rem;
   font-weight: 200;
   color: black;
 }
 
-div.head-gallery p a{
+div.head-gallery p a {
   color: black;
 }
 
-span.bold{
+span.bold {
   font-weight: 400;
-
 }
 
-span.lightbox{
+span.lightbox {
   background-color: rgb(239, 239, 239);
   padding: 0.2em;
   border-radius: 0.2rem;
@@ -76,53 +77,43 @@ span.lightbox{
 
 /* carrete fotos gallery */
 
-div.images-gallery{
+div.images-gallery {
   display: flex;
   overflow: hidden;
 }
 
-/*div.images-gallery img{
-  max-width: 80vw;
-  display: flex;
-  flex-wrap: nowrap;
-}*/
-
 /* comienzo items division */
-
-div.items-division{
-  width: 100vw;
-}
 
 /* encabezado y parráfo de items */
 
-div.head-items{
+div.head-items {
   width: 70vw;
   text-align: center;
   margin: 2em auto;
   margin-top: 4em;
 }
 
-div.head-items h2{
+div.head-items h2 {
   margin-bottom: 0.8em;
   font-weight: 200;
   font-size: 2em;
 }
 
-div.head-items p{
+div.head-items p {
   line-height: 1.7em;
   font-size: 0.9rem;
   font-weight: 200;
   color: black;
-margin-bottom: 4em;
+  margin-bottom: 4em;
 }
 
-div.head-items p a{
+div.head-items p a {
   color: black;
 }
 
 /* items layout */
 
-div.items-layout{
+div.items-layout {
   width: 70%;
   text-align: center;
   margin: auto;
@@ -133,56 +124,75 @@ div.items-layout{
   justify-content: center;
 }
 
-div.box-items{
+div.box-items {
   width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
   padding: 3em 2em;
 }
+
+/*bordes del grid*/
 
 div.box-items.first,
 div.box-items.second,
 div.box-items.fourth,
-div.box-items.fifth{
-  border-bottom: .13em solid #ddd;
-  border-right: .13em solid #ddd;
+div.box-items.fifth {
+  border-bottom: 0.13em solid #ddd;
+  border-right: 0.13em solid #ddd;
 }
 
 div.box-items.third,
 div.box-items.sixth,
 div.box-items.nineth,
 div.box-items.eighth,
-div.box-items.seventh{
-  border-bottom: .13em solid #ddd;
+div.box-items.seventh {
+  border-bottom: 0.13em solid #ddd;
 }
 
 div.box-items.seventh,
 div.box-items.eighth,
 div.box-items.tenth,
-div.box-items.eleventh{
-  border-right: .13em solid #ddd;
+div.box-items.eleventh {
+  border-right: 0.13em solid #ddd;
 }
 
-div.box-items h5{
+div.box-items h5 {
   font-weight: 300;
   font-size: 1.3rem;
-  padding: .8em 0;
+  padding: 0.8em 0;
 }
 
-div.box-items p{
+/*parrafo dentro de los items*/
+
+div.box-items p {
   text-align: center;
   font-weight: 200;
-  width: 12em;
   margin: auto;
 }
+/*iconos*/
 
-div.box-items i{
-  border: .1rem solid #ddd;
+div.box-items i {
+  /* border: 0.1rem solid #ddd; */
   font-size: 1.3em;
-  padding: .9em;
+  padding: 0.9em;
   border-radius: 50%;
+}
+
+span.circle {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 /* final de items */
 
-div.finishBorder{
+div.finishBorder {
   border-bottom: 1px solid #ddd;
+  margin-bottom: 10em;
 }
