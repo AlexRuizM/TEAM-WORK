@@ -19,14 +19,13 @@
   --cyan: #0dcaf0;
   --white: #fff;
   --gray: #adb5bd;
-  font-family: "Inter", sans-serif;
-  font-family: "Rubik", sans-serif;
+  font-size: 0.785rem;
+  font-family: "Inter", "Source Sans Pro", sans-serif;
+  font-weight: 200;
 }
 
 body {
-  /* width: 100vw; */
   max-width: 1400px;
-  /* height: 100vh; */
   margin: auto;
   font-family: "Inter", sans-serif;
 }
