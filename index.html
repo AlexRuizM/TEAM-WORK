@@ -1,13 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- comienzo gallery -->
+    <div class="gallery-division">
+      <!-- encabezado y parrafo -->
+      <div class="head-gallery">
+        <h2>Gallery</h2>
+        <p>
+          This is a <span class="bold">Gallery</span> component. It can behave
+          as a lightbox (when given the
+          <span class="lightbox">lightbox</span> class), and you can customise
+          its appearance with a numbers of modifiers, as well as assing it an
+          aptional <span class="lightbox">onload</span> or
+          <span class="lightbox">onscroll</span> transition modifier (<a
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+            class="underline"
+            >details</a
+          >).
+        </p>
+      </div>
+      <!-- carrete de fotos -->
+      <div class="images-gallery">
+        <div class="slideshow-gallery">
+          <img src="img/gallery/thumbs/01.jpg" alt="ojo azul" />
+        </div>
+        <div class="slideshow-gallery">
+          <img
+            src="img/gallery/thumbs/02.jpg"
+            alt="hombre flotando en el mar"
+          />
+        </div>
+        <div class="slideshow-gallery">
+          <img src="img/gallery/thumbs/03.jpg" alt="teclado de ordenador" />
+        </div>
+        <div class="slideshow-gallery">
+          <img src="img/gallery/thumbs/04.jpg" alt="cubo rubik hexagonal" />
+        </div>
+        <div class="slideshow-gallery">
+          <img src="img/gallery/thumbs/05.jpg" alt="spiderman leyendo" />
+        </div>
+        <div class="slideshow-gallery">
+          <img src="img/gallery/thumbs/06.jpg" alt="avioneta" />
+        </div>
+        <div class="slideshow-gallery">
+          <img src="img/gallery/thumbs/07.jpg" alt="mapa" />
+        </div>
+      </div>
+    </div>
+    <!-- fin de seccion Gallery -->
+    <!-- comienzo seccion items -->
+    <div class="items-division">
+      <!-- encabezado y parrafo-->
+      <div class="head-items">
+        <h2>Items</h2>
+        <p>
+          This is an <span class="bold">Items</span> component, and it's
+          essentially a grid for organising elements of various types. You can
+          customize it appearance with a choice of modifiers, as well as assing
+          it an optional <span class="lightbox">onload</span> or
+          <span class="lightbox">onscroll</span> transition modifier (<a
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+            >details</a
+          >).
+        </p>
+      </div>
+      <!-- comienzo items grid -->
+      <div class="items-layout">
+        <!--comienza grid-->
+        <div class="box-items first">
+          <span class="circle"><i class="fa-regular fa-gem"></i></span>
+          <h5>One</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora vel
+            nostrum temporibus animi illum iure id labore enim voluptatibus?
+            Magni neque illum reiciendis inventore culpa.
+          </p>
+        </div>
+        <div class="box-items second">
+          <span class="circle"><i class="fa-solid fa-floppy-disk"></i></span>
+          <h5>Two</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            voluptates, vitae, exercitationem officia aliquam error temporibus
+            sit quod quae ab voluptatum nulla placeat, repellat maxime.
+          </p>
+        </div>
+        <div class="box-items third">
+          <span class="circle"><i class="fa-solid fa-chart-bar"></i></span>
+          <h5>Three</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem,
+            libero perferendis. Quas quibusdam reiciendis accusantium. Earum
+            blanditiis quibusdam dolor eos. Neque iure ullam corrupti sequi?
+          </p>
+        </div>
+        <div class="box-items fourth">
+          <i class="fa-solid fa-wifi"></i>
+          <h5>Four</h5>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+            nesciunt commodi numquam cum, inventore obcaecati laboriosam quo,
+            perferendis quae nisi nihil ipsam repellendus voluptatibus nemo?
+          </p>
+        </div>
+        <div class="box-items fifth">
+          <span class="circle"><i class="fa-solid fa-gear"></i></span>
+          <h5>Five</h5>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Exercitationem vitae sit illo illum doloremque nam, itaque iusto!
+            Error soluta eius ut id dicta et. At id quaerat dignissimos odit
+            obcaecati.
+          </p>
+        </div>
+        <div class="box-items sixth">
+          <span class="circle"><i class="fa-regular fa-paper-plane"></i></span>
+          <h5>Six</h5>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
+            voluptatibus ad deserunt asperiores maiores est esse consectetur
+            perferendis assumenda eos, praesentium atque, dolores et vitae?
+          </p>
+        </div>
+        <div class="box-items seventh">
+          <span class="circle"><i class="fa-solid fa-desktop"></i></span>
+          <h5>Seven</h5>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem,
+            nobis provident. A molestias corrupti dolorem, at laboriosam quae,
+            consequuntur nisi nihil sint explicabo voluptas iste?
+          </p>
+        </div>
+        <div class="box-items eighth">
+          <span class="circle"><i class="fa-solid fa-rotate"></i></span>
+          <h5>Eight</h5>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae animi
+            qui quas dolore non! Nam praesentium veritatis facilis eum
+            laboriosam mollitia in quam adipisci aliquam.
+          </p>
+        </div>
+        <div class="box-items nineth">
+          <span class="circle"><i class="fa-solid fa-hashtag"></i></span>
+          <h5>Nine</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+            maxime. Enim, non maxime fugiat sunt asperiores vitae atque iste?
+            Assumenda cum explicabo facilis magni libero.
+          </p>
+        </div>
+        <div class="box-items tenth">
+          <span class="circle"><i class="fa-solid fa-bolt"></i></span>
+          <h5>Ten</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+            maxime. Enim, non maxime fugiat sunt asperiores vitae atque iste?
+            Assumenda cum explicabo facilis magni libero.
+          </p>
+        </div>
+        <div class="box-items eleventh">
+          <span class="circle"><i class="fa-regular fa-envelope"></i></span>
+          <h5>Eleven</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+            maxime. Enim, non maxime fugiat sunt asperiores vitae atque iste?
+            Assumenda cum explicabo facilis magni libero.
+          </p>
+        </div>
+        <div class="box-items twelfth">
+          <span class="circle"><i class="fa-solid fa-leaf"></i></span>
+          <h5>Twelve</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+            maxime. Enim, non maxime fugiat sunt asperiores vitae atque iste?
+            Assumenda cum explicabo facilis magni libero.
+          </p>
+        </div>
+        <!--fin de grid-->
+      </div>
+      <!-- fin de items -->
+      <div class="finishBorder"></div>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/3d3a3461c1.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://kit.fontawesome.com/b20c74decf.js"
+    crossorigin="anonymous"
+  ></script>
 </html>
