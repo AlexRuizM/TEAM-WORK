@@ -18,10 +18,12 @@
   --white: #fff;
   --gray: #adb5bd;
   font-size: 0.785rem;
-  font-family: "Source Sans Pro", "Inter", sans-serif;
+  font-family: "Inter", "Source Sans Pro", sans-serif;
   font-weight: 200;
 }
+
 /* Iconos */
+
 span.style2 {
   display: block;
   margin-bottom: 1em;
@@ -66,7 +68,9 @@ div.iconoscirculo i:hover {
 h3.h3texto {
   text-align: left;
 }
+
 /*  Botones */
+
 div.fbuttons {
   text-align: left;
   width: 75%;
@@ -137,7 +141,9 @@ div.buttons6 button {
   padding: 1em 1.7em;
   margin: 1em;
 }
+
 /* Actions */
+
 div.factions {
   text-align: left;
   width: 75%;
@@ -193,6 +199,7 @@ div.actions1 button {
   color: white;
   background-color: black;
 }
+
 /* Formulario */
 
 div.fform {
@@ -208,6 +215,7 @@ div.fform {
 form div div input{
   border: 1px solid #ececec;
   margin-right: 2em;
+  display: inline-block;
 }
 form div input:focus {
   border: 1px solid var(--cyan);
@@ -215,12 +223,15 @@ form div input:focus {
 textarea {
   border: 1px solid #ececec;
   border-radius: 0.3em;
-  padding: 3em;
+  padding: 1em;
   margin-bottom: 1em;
   margin-top: 1em;
+  box-sizing: border-box;
+  width: 100%;
 }
 textarea:focus {
   border: 1.5px solid var(--cyan);
+  text-align: left;
 }
 form div {
   display: flex;
