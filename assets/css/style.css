@@ -3,6 +3,7 @@
   padding: 0;
   border: 0;
   outline: none;
+  box-sizing: border-box;
 }
 :root {
   --blue: #0d6efd;
@@ -20,6 +21,13 @@
   font-size: 0.785rem;
   font-family: "Inter", "Source Sans Pro", sans-serif;
   font-weight: 200;
+}
+
+/* Body */
+body {
+  max-width: 1400px;
+  margin: auto;
+  font-family: "Inter", sans-serif;
 }
 
 /* Iconos */
@@ -50,23 +58,40 @@ div.iconosnormales i {
 div.iconosnormales i:hover {
   color: var(--cyan);
 }
-
-div.iconoscirculo i {
-  width: 1em;
-  height: 1em;
-  text-align: center;
-  padding: 10px;
-  border: 1.5px solid gainsboro;
+span.circle {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: .5em; 
+}
+div.iconoscirculo i {
+  /* width: 1em;
+  height: 1em; */
+  text-align: left;
+  padding: 10px;
   margin: 0.3em;
   color: black
 }
-div.iconoscirculo i:hover {
-  color: var(--cyan);
+div.iconoscirculo{
+  display: flex;
+  flex-direction: row;
+}
+div.iconoscirculo span.circle:hover {
   border: 1.5px solid var(--cyan);
 }
+div.iconoscirculo span.circle i:hover {
+  color: var(--cyan);
+}
+
+/*  H3 - Titulos */
+
 h3.h3texto {
   text-align: left;
+  font-weight: lighter;
 }
 
 /*  Botones */
@@ -102,14 +127,16 @@ div.buttons1 button {
   margin: 1em;
 }
 div.buttons2 button {
-  padding: 0.8em 2em;
+  padding: 1.3em 2.4em;
   margin: 1em;
+  border-radius: 3em;
 }
 div.buttons3 button {
   padding: 1.1em 6em;
   margin: 1em;
 }
 div.buttons4 button {
+  border-radius: 3em;
   font-size: 0.6rem;
   margin: 1em;
   padding: 0.6em 3.8em;
@@ -136,6 +163,10 @@ div.buttons6 button:first-of-type {
   color: var(--white);
   background-color: gainsboro;
 }
+div.buttons6 button:first-of-type:hover {
+  color: var(--white);
+  background-color: #0dcaf0;
+}
 div.buttons6 button {
   color: gainsboro;
   padding: 1em 1.7em;
@@ -158,10 +189,11 @@ div.factions button:hover {
   background-color: var(--cyan);
 }
 div.actions1 button {
-  padding: 1em 1.5em;
   margin: 1em 1em 3em 0;
+  padding: 2em 3em;
+  border-radius: 3em;
 }
-.asmall {
+.asmall{
   margin: 1em 1em 2em 0;
   font-size: 1rem;
   background-color: white;
@@ -169,20 +201,29 @@ div.actions1 button {
   border-color: black;
 }
 .asmallblack {
+  border-radius: 3em;
   color: white;
   background-color: black;
   margin: 1em 1em 0em 0;
+  padding: 0.8em 1.5em;
+}
+.asmallwhite{
+  padding: 0.8em 1.5em;
 }
 .astacked {
   display: flex;
   flex-direction: column;
   margin: 1em 1em 3em 0;
-  width: 6em;
+  width: 7em;
 }
 .astacked button {
   margin: 1em 1em 1em 0;
+  padding: 2em 3em;
+  border-radius: 3em;
 }
 .astacked button:first-of-type {
+  padding: 2em 3em;
+  border-radius: 3em;
   color: white;
   background-color: black;
 }
@@ -193,11 +234,15 @@ div.actions1 button {
   width: 22em;
 }
 .astackedfit button {
-  margin: 1em 1em 0 0;
+  margin: 1em 1em 2em 0;
+  padding: 2em 3em;
+  border-radius: 3em;
 }
 .astackedfit button:first-of-type {
   color: white;
   background-color: black;
+  padding: 2em 3em;
+  border-radius: 3em;
 }
 
 /* Formulario */
@@ -269,19 +314,17 @@ div.radios div input{
   margin-block: initial;
   margin-right: .6em;
 }
-div.checks{
-  justify-content: space-between;
+div.checks label.checkbox{
+  /* justify-content: space-around; */
+  margin-right: 4em;
+  align-content: center;
 }
 div label.checkbox{
-  font-size: .8rem;
+  font-size: .9rem;
 }
 label.checkbox input{
-  margin-right: 1em;
-  
+  margin-right: 1em; 
 }
-/* label.checkbox input:last-of-type{
-margin-left: 2em;
-} */
 
 /* Tabla */
 div.ftable {
@@ -294,7 +337,6 @@ div.ftable {
   grid-template-columns: 1fr 3fr;
   grid-column-gap: 1em;
 }
-
 table tr td{
   border-top: 1.5px solid var(--gray);
   padding: .5em;
@@ -303,7 +345,10 @@ table tr td{
 table {
   border-collapse: collapse;
   width: 100%;
-  text-align: center;
+  text-align: left;
+}
+div.ftable div div table{
+margin-bottom: 3em;
 }
 div.ftable table tr.trgrey{
   background-color: gainsboro;
@@ -315,7 +360,7 @@ div.ftable table.cuadros tr:last-child > td {
   border: 0
 }
 div.ftable table th{
-  text-align: center;
+  text-align: left;
   padding: 1em;
 }
 form button.disabled{
