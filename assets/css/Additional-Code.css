@@ -1,22 +1,35 @@
-/*En el body pongo la font-family: 'Raleway', sans-serif; para que todo tenga el mismo tipo de letra*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+  }
+  
+:root {
+    --white: #fff;
+    --gray: #adb5bd;
+  }
+/*La font-family en el body para que se aplique a todo */
 body{
-    font-family: 'Raleway', sans-serif;
-     
+    font-family: 'Raleway', sans-serif;   
 }
 
-
-/* En el div1principa que dentro esta todo, pongo un width especifico y margin para que todo tenga una anchura y un margen especifico*/
+/*Para todo lo que hay dentro del main*/
 .div1principal{
-    width: 75%;
-    margin: auto;
+    width: 60%;
+    margin: auto;  
 }
 
+/*Para la linea horizontal que ocupa todo*/
 .lineaFuera{
-     
-      border-bottom: 
-      .5px solid ;
-      color: #868282;
+      border-bottom: .9px solid ;
+      color: #bab0b0;
+      margin-top: 3em;
+      margin-bottom: 3em;
 }
+
+/*Para la linea horizontal de dentro (solo ocupa lo que esta en la parte derecha*/
 .linea{
     width: 100%;
     height: 1px;
@@ -27,53 +40,56 @@ body{
      margin-top: 3em;
 }
 
+/*La clase todo es cada div que ocupa cada parte */
 .todo{
     display: grid;
     grid-template-columns: 30% 70%;
     margin: auto;
     grid-gap: 0.5em 1em #cccccc;
-    width: 60%;  
+    width: 100%;  
    }
 
-   
+ /*La clase additional solo es para la primera parte*/
 .additional {
     text-align: center;
-    padding-bottom: 0;
-    padding-top: 0;
+    padding-bottom: 5em;
+    padding-top: 5em;
 }
+/*Para el cuadrado de la palabra for dentro de text*/
+.for{
+    background-color: #ecf0f1;
+    border-radius: .2rem
+}
+
+/*Solo es para los headings que tengan un tamaño comcreo de letra*/
+ .headings{
+    font-size: 2.5em; 
+ } 
+
+/*Dar color a los links*/
 a{
     color: rgb(58, 57, 57) ;
 }
 
+/*Para toda la parte izquierda*/
 .left{
-    padding-top: 1em;
-    margin: auto;
-    justify-content: left;
-    font-size: 2em;
-    font-weight: 300;
-    color: #2e2e2e;
-    letter-spacing: -0.2rem;
-    margin-top: 2em;
-    text-align: left;
-   
-   
-}
-.right{
-justify-content: right;
-padding-top: 3em;
-
-margin-bottom: 2em;
-
+   float: left;
+    width: 30%;
+    padding: 20px;
+    font-size:2em;
 }
 
+/*Para toda la parte derecha*/
+/*.right{
+float: right;
+padding: 20px;
+}*/
 
-
-.for{
-    background: #ecf0f1;
-}
+/*Para el div que hay dentro de pre code*/
 .while{
     background: #ecf0f1;
     width:75%;
+    border-radius: .5rem;
 }
 
 
