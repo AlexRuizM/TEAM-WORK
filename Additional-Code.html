@@ -44,7 +44,7 @@
               Lorem ipsum dolor sit amet consectetur. text Lorem ipsum dolor sit
               amet. and this is <sub>subescript</sub>
               <a href="underlined">underlined</a> and this is code:
-              <span class="for">for (;;) { ... }</span>.Finally,this is a
+              <pre><code><span class="for"> for (;;)  { ... }  </span></code></pre>.Finally,this is a
               <a href="link">link</a>.
             </p>
           </div>
@@ -57,19 +57,20 @@
           <div><h3 class="left">Headings</h3></div>
           <div class="right">
             <div class="headings">
-            <div><h1 >Heading 1</h1></div>
-            <div><h2 >Heading 2</h2></div>
-            <div><h3 >Heading 3</h3></div>
-            <div><h4 >Heading 4</h4></div>
-            <div><h5 >Heading 5</h5></div>
-            <div><h6 >Heading 6</h6></div>
+            <div class="soloEspacios"><h1>HeadingLevel 1</h1></div>
+            <div class="soloEspacios"><h2>HeadingLevel 2</h2></div>
+            <div class="soloEspacios"><h3>HeadingLevel 3</h3></div>
+            <div class="soloEspacios"><h4>HeadingLevel 4</h4></div>
+            <div class="soloEspacios"><h5>HeadingLevel 5</h5></div>
+            <div class="soloEspacios"><h6>HeadingLevel 6</h6></div>
             </div>
             <!--Linea horizontal-->
             <div class="linea"></div>
 
             <!--bloque 2 heading-->
 
-            <h1>Heading with a Subtitle</h1>
+            <h1 class="soloEspacios">Heading with a Subtitle</h1>
+            
             <i> Lorem ipsum dolor sit amet consectetur adipisicing elit.</i>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
@@ -79,11 +80,12 @@
               animi impedit tenetur magnam laudantium architecto molestiae similique
                placeat! Rem, magni?
             </p>
-
+          
             <!--Linea horizontal-->
             <div class="linea"></div>
             <!--bloque 3 heading-->
-            <h2 >Heading with a Subtitle</h2>
+            <h2 class="soloEspacios">Heading with a Subtitle</h2>
+            
           <i> Lorem ipsum dolor sit amet nullam id egestas urna aliquam</i>
 
             <p>
@@ -95,13 +97,13 @@
               animi impedit tenetur magnam laudantium architecto molestiae similique
                placeat! Rem, magni?
             </p>
-
+            
             <!--Linea horizontal-->
             <div class="linea"></div>
 
             <!--bloque 4 heading-->
 
-            <h3>Heading with a Subtitle</h3>
+            <h3 class="soloEspacios">Heading with a Subtitle</h3>
 
           <i> Lorem ipsum dolor sit amet nullam id egestas urna aliquam</i>
 
@@ -119,7 +121,7 @@
             <div class="linea"></div>
 
             <!--bloque 5 heading-->
-            <h4>Heading with a Subtitle</h4>
+            <h4 class="soloEspacios">Heading with a Subtitle</h4>
             <i> Lorem ipsum dolor sit amet nullam id egestas urna aliquam</i>
 
             <p>
@@ -133,15 +135,15 @@
              animi impedit tenetur magnam laudantium architecto molestiae similique
               placeat! Rem, magni?
             </p>
-          </div>
+          
           <!--Linea horizontal-->
         </div>
-
+    </div>
         <div class="lineaFuera"></div>
 
         <!-- Parte Hunordered-->
         <div class="todo">
-          <div><h3 class="left">Unordered List</h3></div>
+         <div><h3 class="left">Unordered List</h3></div>
 
           <div class="right">
             
@@ -193,6 +195,7 @@
           <div><h3 class="left">Definition list</h3></div>
 
           <div class="right">
+            
             <p><strong>Lorem ipsum dolor sit amet.</strong></p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
@@ -216,10 +219,10 @@
 
         <!--Parte blockuote-->
         <div class="todo">
-          <div><h3 class="left">Blockuote</h3></div>
+          <div><h3 class="left">Blockquote</h3></div>
 
           <div class="right">
-            <blockquote >
+            <blockquote class="blockquote">
              <i>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Commodi laborum, aliquid animi accusamus cumque aliquam adipisci
@@ -245,11 +248,15 @@
             <div class="while">
                 i=0;
 
+
+
                 while (!deck.IsInOrder()){
                     print `Iteration `+ i;
                     deck.shuffle();
                     i++;
                 }
+
+
 
                 Print `It took` + i + `interations to sort the deck.`;
              </div>
@@ -259,7 +266,7 @@
         </div>
         </div> 
         <div class="lineaFuera"></div>
-      </div>
+      
       </main>
     
   </body>

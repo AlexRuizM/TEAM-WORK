@@ -4,6 +4,7 @@
     padding: 0;
     border: 0;
     outline: none;
+   
   }
   
 :root {
@@ -65,10 +66,19 @@ body{
  .headings{
     font-size: 2.5em; 
  } 
+ .soloEspacios{
+    margin-bottom: 1em;
+ }
 
 /*Dar color a los links*/
 a{
     color: rgb(58, 57, 57) ;
+}
+/*Linea vertical del blockquote*/
+.blockquote{
+    border-left:.3em solid rgb(188, 188, 188); 
+    padding-left:2em;
+    height: 5em;
 }
 
 /*Para toda la parte izquierda*/
@@ -80,15 +90,16 @@ a{
 }
 
 /*Para toda la parte derecha*/
-/*.right{
+.right{
 float: right;
 padding: 20px;
-}*/
+
+}
 
 /*Para el div que hay dentro de pre code*/
 .while{
     background: #ecf0f1;
-    width:75%;
+    width: 100%;
     border-radius: .5rem;
 }
 
