@@ -23,11 +23,18 @@
   font-weight: 200;
 }
 
-/* Body */
+/* Generics */
 body {
-  max-width: 1400px;
   margin: auto;
   font-family: "Inter", sans-serif;
+}
+body, header, main, footer {
+  width: 100%;
+}
+
+section{
+  max-width: 1400px;
+
 }
 
 /* Iconos */
@@ -53,7 +60,7 @@ div.principaliconos {
 }
 div.iconosnormales i {
   padding: 0.5em;
-  color: black
+  color: black;
 }
 div.iconosnormales i:hover {
   color: var(--cyan);
@@ -66,7 +73,7 @@ span.circle {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: .5em; 
+  margin: 0.5em;
 }
 div.iconoscirculo i {
   /* width: 1em;
@@ -74,9 +81,9 @@ div.iconoscirculo i {
   text-align: left;
   padding: 10px;
   margin: 0.3em;
-  color: black
+  color: black;
 }
-div.iconoscirculo{
+div.iconoscirculo {
   display: flex;
   flex-direction: row;
 }
@@ -149,6 +156,9 @@ button.bblack {
   background-color: black;
   color: white;
 }
+.bsmall:hover {
+  color: #ececec;
+}
 .bsmall {
   font-size: 0.5em;
   color: #0dcaf0;
@@ -193,7 +203,7 @@ div.actions1 button {
   padding: 2em 3em;
   border-radius: 3em;
 }
-.asmall{
+.asmall {
   margin: 1em 1em 2em 0;
   font-size: 1rem;
   background-color: white;
@@ -207,7 +217,7 @@ div.actions1 button {
   margin: 1em 1em 0em 0;
   padding: 0.8em 1.5em;
 }
-.asmallwhite{
+.asmallwhite {
   padding: 0.8em 1.5em;
 }
 .astacked {
@@ -257,7 +267,7 @@ div.fform {
   grid-template-columns: 1fr 3fr;
   grid-column-gap: 1em;
 }
-form div div input{
+form div div input {
   border: 1px solid #ececec;
   margin-right: 2em;
   display: inline-block;
@@ -283,7 +293,7 @@ form div {
   flex-direction: row;
 }
 
-form div input{
+form div input {
   border-radius: 0.2em;
   padding: 0.2em 0em;
   margin-top: 1em;
@@ -303,27 +313,27 @@ div form div.selector select#Category {
 
 div form div.selector select#Category:focus {
   border: 1.5px solid var(--cyan);
-  border-radius: .3em;
+  border-radius: 0.3em;
 }
 div.radios {
   font-size: 0.8em;
   margin-bottom: 2em;
   justify-content: space-between;
 }
-div.radios div input{
+div.radios div input {
   margin-block: initial;
-  margin-right: .6em;
+  margin-right: 0.6em;
 }
-div.checks label.checkbox{
+div.checks label.checkbox {
   /* justify-content: space-around; */
   margin-right: 4em;
   align-content: center;
 }
-div label.checkbox{
-  font-size: .9rem;
+div label.checkbox {
+  font-size: 0.9rem;
 }
-label.checkbox input{
-  margin-right: 1em; 
+label.checkbox input {
+  margin-right: 1em;
 }
 
 /* Tabla */
@@ -337,9 +347,9 @@ div.ftable {
   grid-template-columns: 1fr 3fr;
   grid-column-gap: 1em;
 }
-table tr td{
+table tr td {
   border-top: 1.5px solid var(--gray);
-  padding: .5em;
+  padding: 0.5em;
   /* border-bottom: 1px solid black; */
 }
 table {
@@ -347,23 +357,23 @@ table {
   width: 100%;
   text-align: left;
 }
-div.ftable div div table{
-margin-bottom: 3em;
+div.ftable div div table {
+  margin-bottom: 3em;
 }
-div.ftable table tr.trgrey{
+div.ftable table tr.trgrey {
   background-color: gainsboro;
 }
-div.ftable table.cuadros tr td{
+div.ftable table.cuadros tr td {
   border: 1.5px solid var(--gray);
 }
 div.ftable table.cuadros tr:last-child > td {
-  border: 0
+  border: 0;
 }
-div.ftable table th{
+div.ftable table th {
   text-align: left;
   padding: 1em;
 }
-form button.disabled{
+form button.disabled {
   margin-top: 3em;
   padding: 1em 1.8em;
-} 
+}
