@@ -106,7 +106,7 @@ body{
 /*Para el cuadrado de la palabra for dentro de text*/
 .for{
     background-color: #ecf0f1;
-    border-radius: .2rem;
+    border-radius: .4rem;
     padding: 3px 8px;
 }
 
@@ -162,25 +162,24 @@ a{
 .left{
     padding: 20px;
     font-size:2.5em;
-    font-weight: lighter;
+    font-weight:normal;
 }
 
 /*Para toda la parte derecha*/
 .right{
 float: right;
 padding: 20px;
-font-weight: lighter;
+font-weight: normal;
 
 }
 
 /*Para el div que hay dentro de pre code*/
-.while{
+ .while {
+    text-align: left;
     background: #ecf0f1;
     width: 100%;
     border-radius: .5rem;
-   font-size: 1.5em;
-    text-align: left;
-
-}
-
+    font-size: 1.5em;
+  }
+ 
 
