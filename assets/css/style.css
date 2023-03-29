@@ -90,10 +90,9 @@ div.boxCollumnRight {
   
 }
 .Centrado {
-  width: 100vw;
-  content: center;
-  justify-content: center;
-  resize: both;
+  width: 25vw;
+  margin: 0 auto;
+  
   
   
 
