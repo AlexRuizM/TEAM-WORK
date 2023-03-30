@@ -18,22 +18,20 @@
 /*La font-family en el body para que se aplique a todo */
 body{
     /*font-family: 'Raleway', sans-serif; */
-    
-font-family: 'Source Sans Pro', sans-serif;
-
+  
+   font-family: 'Source Sans Pro', sans-serif;
 
 }
 
 /*Para todo lo que hay dentro del main*/
 .div1principal{
     width: 60%;
-    margin: auto;  
+    margin: auto; 
 }
-
 /*Para la linea horizontal que ocupa todo*/
 .lineaFuera{
       border-bottom: .9px solid ;
-      color: #b1afaf;
+      color: #9f9f9f;
       margin-top: 3em;
       margin-bottom: 3em;
 }
@@ -44,7 +42,7 @@ font-family: 'Source Sans Pro', sans-serif;
     height: 1px;
      border-bottom: 
      .5px solid ;
-     color:  #b1afaf;
+     color: #9f9f9f;
     margin-bottom: 1.5em;
      margin-top: 1.5em;
 }
@@ -56,41 +54,90 @@ font-family: 'Source Sans Pro', sans-serif;
     margin: auto;
     grid-gap: 0.5em 1em #cccccc;
     width: 100%; 
-    font-size:1em; 
+   }
+   /*Tamaño de grosor en los headings*/
+   h1{
+    font-weight: normal;
+   }
+   h2{
+    font-weight: lighter;
+   }
+   h3{
+    font-weight: lighter;
+   }
+   h4{
+    font-weight: lighter;
+   }
+   h5{
+    font-weight: lighter;
+   }
+   h6{
+    font-weight: lighter;
    }
 
+   .leveluno{
+    font-size: 3.5rem;
+   }
+   /*Quitar grosor a los heading*/
+  
+   /*Tamaño para todos los parrafos*/
+   p, i {
+    font-size: 1.6rem;
+   }
+   .unordered{
+    font-size: 1.6rem;
+    font-weight: lighter;
+   }
+   .orderedlist{
+    font-size: 1.6rem;
+    font-weight: lighter;
+   }
+
+  
  /*La clase additional solo es para la primera parte*/
 .additional {
     text-align: center;
     padding-bottom: 5em;
     padding-top: 5em;
+    font-weight: lighter;
 }
 /*Elements es para darle tamaño a Additional Elements*/
 .Elements{
-    font-size: 3.5em;
+    font-size: 4em;
     margin-bottom: 1em;
+    font-weight: lighter;
 }
 /*Para el cuadrado de la palabra for dentro de text*/
 .for{
     background-color: #ecf0f1;
-    border-radius: .2rem
+    border-radius: .4rem;
+    padding: 3px 8px;
 }
 
 /*Solo es para los headings */
  .headings{
     font-size: 2.5em; 
-    
+    font-weight: lighter;
  } 
- .soloEspacios{
+ .level{
     margin-bottom: 1em;
+    font-size: 3rem;
+    font-weight: lighter;
+ }
+ /*Para para los titulos de subtitle*/
+ .sub{
+    font-size: 3rem;
+    font-weight: lighter;
  }
  .subtitle{
     margin-top: 1.7em;
+    font-weight: lighter;
  }
  /*Para ordered list*/
  .ordered{
     margin-top:.8em;
     margin-bottom: .8em;
+    font-weight: lighter;
  }
 
 /*Dar color a los links*/
@@ -103,37 +150,41 @@ a{
     margin-top:1em;
     margin-bottom: 1em;
     margin-left: 3%;
+    font-weight: lighter;
 }
 /*Linea vertical del blockquote*/
 .blockquote{
     border-left:.3em solid rgb(188, 188, 188); 
     padding-left:2em;
-    height: 6em;
+    height: 7em;
     display: inline-block;
+
 
 }
 
 /*Para toda la parte izquierda*/
 .left{
-   float: left;
-    width: 30%;
     padding: 20px;
-    font-size:2em;
+    font-size:2.5em;
+    font-weight:normal;
 }
 
 /*Para toda la parte derecha*/
 .right{
 float: right;
 padding: 20px;
-
+font-weight: normal;
 
 }
 
 /*Para el div que hay dentro de pre code*/
-.while{
+ .while {
+    text-align: left;
     background: #ecf0f1;
     width: 100%;
     border-radius: .5rem;
-}
-
+    font-size: 1.5em;
+  }
+ 
+ 
 
