@@ -20,14 +20,16 @@
   --white: #fff;
   --gray: #adb5bd;
   font-size: 0.785rem;
-  font-family: "Inter", "Source Sans Pro", sans-serif;
+
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 200;
 }
 
 body {
   max-width: 1400px;
   margin: auto;
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
+
 }
 
 /* container general gallery */
@@ -46,13 +48,13 @@ div.head-gallery {
 
 div.head-gallery h2 {
   margin-bottom: 0.8em;
-  font-size: 2em;
+  font-size: 3rem;
   font-weight: 200;
 }
 
 div.head-gallery p {
   line-height: 1.7em;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   font-weight: 200;
   color: black;
 }
@@ -81,6 +83,15 @@ div.images-gallery {
   overflow: hidden;
 }
 
+div.slideshow-gallery{
+  width: 100%;
+}
+
+div.images-gallery div.slideshow-gallery img{
+  width: 100%;
+  height: auto;
+}
+
 /* comienzo items division */
 
 /* encabezado y parráfo de items */
@@ -95,12 +106,12 @@ div.head-items {
 div.head-items h2 {
   margin-bottom: 0.8em;
   font-weight: 200;
-  font-size: 2em;
+  font-size: 3em;
 }
 
 div.head-items p {
   line-height: 1.7em;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   font-weight: 200;
   color: black;
   margin-bottom: 4em;
@@ -128,7 +139,7 @@ div.box-items {
   max-width: 100%;
   max-height: 100%;
   overflow: hidden;
-  padding: 3em 2em;
+  padding: 3em 3em;
 }
 
 /*bordes del grid*/
@@ -158,29 +169,31 @@ div.box-items.eleventh {
 
 div.box-items h5 {
   font-weight: 300;
-  font-size: 1.3rem;
+  font-size: 2rem;
   padding: 0.8em 0;
 }
 
 /*parrafo dentro de los items*/
 
 div.box-items p {
+  width: 70%;
   text-align: center;
+  font-size: 1.5rem;
   font-weight: 200;
   margin: auto;
+  line-height: 1.5em;
 }
 /*iconos*/
 
 div.box-items i {
-  /* border: 0.1rem solid #ddd; */
-  font-size: 1.3em;
+  font-size: 2.5em;
   padding: 0.9em;
   border-radius: 50%;
 }
 
 span.circle {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   border: 1px solid #ddd;
   border-radius: 50%;
   display: flex;
