@@ -377,3 +377,148 @@ form button.disabled {
   margin-top: 3em;
   padding: 1em 1.8em;
 }
+
+/* parte pol */
+
+div.imagesCollumnLeft{
+  width: 100%;
+}
+
+div.imagesLayout,
+div.boxLayout {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+div.imagesCollumnLeft,
+div.boxCollumnLeft {
+  width: 300px;
+}
+
+div.imagesCollumnRight,
+div.boxCollumnRight {
+  width: 700px;
+}
+
+div.fitSection img{
+  max-width: 600px;
+  height: auto;
+  margin: 1rem 0 1.5rem 0;
+}
+
+div.imagesCollumnLeft h4{
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+div.imagesCollumnRight h4{
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+div.imagesCollumnRight p{
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+div.fitSection{
+  width: 100%;
+}
+
+div.leftSection img{
+  width: 150px;
+  height: auto;
+  float: left;
+  margin: 0rem 1.5rem .8rem 0;
+}
+
+div.leftSection{
+  width: 100%;
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+}
+
+div.leftSection h4{
+  margin-bottom: 1rem;
+}
+
+div.rightSection img{
+  width: 160px;
+  height: auto;
+  float: right;
+  margin: 0rem 0 1rem 1.5rem;
+}
+
+div.rightSection{
+  width: 100%;
+  line-height: 1.5rem;
+}
+
+div.rightSection h4{
+  margin-bottom: 1rem;
+}
+
+div.borderGray{
+  border-bottom: 1px solid #ddd;
+  width: 80%;
+  margin: 3rem auto;
+}
+
+div.boxCollumnLeft h4{
+  font-size: 1.8rem;
+  font-weight: 100;
+}
+
+div.boxCollumLeft{
+  width: 100%;
+} 
+
+div.boxCollumnRight{
+  width: 100%;
+  padding: 1.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: .3rem;
+}
+
+div.boxCollumnRight{
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+
+.footer-nav-social{
+  display: flex;
+  flex-direction: row;
+  left: -.1em;
+}
+/*footer*/
+footer{
+  text-align: center;
+}
+.footer-icons:hover {
+  background: white;
+  border: 1px solid lightblue
+}
+
+.footer-icons a.fa-brands:hover,
+.footer-icons a.fa:hover {
+  color: lightblue; 
+}
+
+footer .copyright h4 i {
+  color: red;
+}
+
+footer .copyright h4 {
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: gray;
+  margin: 2em 0 1em;
+}
+
+footer .codespace {
+  color: green;
+  font-weight: bold;
+}
