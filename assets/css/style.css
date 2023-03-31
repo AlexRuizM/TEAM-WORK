@@ -395,11 +395,20 @@ div.imagesCollumnLeft{
 
 div.imagesLayout,
 div.boxLayout {
-  width: 80%;
+ /*  width: 100%;
   margin: auto;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: center; */
+  text-align: left;
+  width: 70%;
+  margin: auto;
+  padding: 3em 0;
+  border-bottom: 2px solid #ececec;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-column-gap: 1em;
+  font-size: 2rem;
 }
 
 div.imagesCollumnLeft,
@@ -413,7 +422,7 @@ div.boxCollumnRight {
 }
 
 div.fitSection img{
-  max-width: 600px;
+  max-width: 800px;
   height: auto;
   margin: 1rem 0 1.5rem 0;
 }
