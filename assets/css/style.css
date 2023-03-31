@@ -19,25 +19,578 @@
   --white: #fff;
   --gray: #adb5bd;
   font-size: 0.785rem;
-  font-family: "Inter", "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 200;
 }
 
-/* Generics */
 body {
+ /*  max-width: 1400px; */
   margin: auto;
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
 }
-body,
-header,
-main,
-footer {
+div .item-division{
+  max-width: 1400px;
+}
+
+header{
+  font-family: 'Source Sans Pro', sans-serif;
+  max-width: 100%;
+}
+header img{
+  width: 50%;
+}
+.banner{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-bottom: .2px solid lightgrey; 
+}
+.text-banner{
+  background-color: #FFFFFF;;
+  width: 50vw;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 0 6em;
+} 
+ .text-banner h1{
+  font-size: 5.3rem;
+  margin-bottom: 1rem;
+}
+.text-banner .p1 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 3rem;
+} 
+.text-banner .p2{
+  margin-top: 1.5em;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+} 
+.img-banner{
+  width: 50vw;
+  height: 100vh;
+} 
+.img-banner img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: -3px 0 7px -5px #333, 5px 0 5px -5px #333;
+}
+
+/* Esta class .word afecta en todas las secciones para el efecto de las palabras "onload" y "onscroll".*/
+.word{  
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.3rem;
+  font-weight:300 ;
+  background-color: #F2F2F2;
+  border-radius: .2em;
+  padding: .2rem .5rem; 
+  margin: 0 .3rem;
+} 
+.text-banner button{
+  border: 2px solid #DADADA;
+  padding: 1.3em 3em;
+  margin-top: 2em;
+  background-color: white;
+  border-radius: 2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: .15rem;
+} 
+
+/* "header a" y "header button" afectan a los links y a los botones de todo el header*/
+header a:visited{
+  color: black;
+}
+header a:hover{
+  color: #A3E9F2; 
+  text-decoration: none;
+}
+header button:hover{
+  color: #A3E9F2;
+  text-decoration: none;
+  border: 2px solid #A3E9F2;
+}
+
+
+/* Todo este css es para la primera sección: "banner". 
+Pasamos a la sección 2: "spotlight1".
+ */
+
+  .spotlight1{
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  border-bottom: .2px solid lightgrey;
+} 
+ .img-spotlight01 img{
+   width: 35vw;
+   height: 100%; 
+   object-fit: cover;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   position: relative;
+ }
+.text-spotlight1{
+  background-color: #FFFFFF;
+  margin: auto;
+  padding: 0 6em;
+ }
+ .text-spotlight1 h2{
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+ .text-spotlight1 p{
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+.text-spotlight1 button{
+  border: 2px solid #DADADA;
+  padding: 1.3em 2.5em;
+  margin-top: 2.5em;
+  background-color: white;
+  border-radius: 2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: .15rem;
+}  
+
+/* Todo este css es para la segunda sección: "spotlight1". 
+Pasamos a la sección 3: "spotlight2".
+ */
+
+.spotlight2{
+  display: flex;
+  width: 100%;
+  height: 55vh;
+  border-bottom: .2px solid lightgrey;
+}
+.text-spotlight2{
+  background-color: #FFFFFF;
+  margin: auto;
+  padding: 0 6em;
+}
+ .text-spotlight2 h2{
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.text-spotlight2 p{
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+.text-spotlight2 button{
+  border: 2px solid #DADADA;
+  padding: 1.2em 2.5em;
+  margin-top: 2.5em;
+  background-color: white;
+  border-radius: 2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: .13rem;
+}
+.img-spotlight02 img{
+  width: 35vw;
+  height: 100%; 
+  object-fit: cover;
+  box-shadow: -3px 0 7px -5px #333, 5px 0 5px -5px #333;
+  position: relative;
+ } 
+ 
+/* Todo este css es para la tercera sección: "spotlight2". 
+Pasamos a la sección 4: "spotlight3".
+ */
+.spotlight3{
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  border-bottom: .2px solid lightgrey;
+}
+.text-spotlight3{
+  background-color: #FFFFFF;
+  margin: auto;
+  padding: 0 6em;
+}
+ .img-spotlight03 img{
+   width: 35vw;
+   height: 100%; 
+   object-fit: cover;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   position: relative;
+}
+ .text-spotlight3 h2{
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.text-spotlight3 p{
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+.text-spotlight3 button{
+  border: 2px solid #DADADA;
+  padding: 1.2em 2.5em;
+  margin-top: 2.5em;
+  background-color: white;
+  border-radius: 2em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  letter-spacing: .13rem;
+} 
+
+/* Final de la última sección. */
+
+
+/* Parte de criss */
+
+/* container general gallery */
+
+div.gallery-division {
+  margin-top: 4.5em;
+}
+
+/* encabezado y parrafo de gallery */
+
+div.head-gallery {
+  width: 70vw;
+  text-align: center;
+  margin: 2em auto;
+}
+
+div.head-gallery h2 {
+  margin-bottom: 0.8em;
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+div.head-gallery p {
+  line-height: 1.7em;
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: black;
+}
+
+div.head-gallery p a {
+  color: black;
+}
+
+span.bold {
+  font-weight: 400;
+}
+
+span.lightbox {
+  background-color: rgb(239, 239, 239);
+  padding: 0.2em;
+  border-radius: 0.2rem;
+  font-family: monospace;
+  font-weight: lighter;
+  color: rgb(94, 94, 94);
+}
+
+/* carrete fotos gallery */
+
+div.images-gallery {
+  display: flex;
+  overflow: hidden;
+}
+
+div.slideshow-gallery{
   width: 100%;
 }
 
-/* section {
-  max-width: 1400px;
-} */
+div.images-gallery div.slideshow-gallery img{
+  width: 100%;
+  height: auto;
+}
+
+/* comienzo items division */
+
+/* encabezado y parráfo de items */
+
+div.head-items {
+  width: 70vw;
+  text-align: center;
+  margin: 2em auto;
+  margin-top: 4em;
+}
+
+div.head-items h2 {
+  margin-bottom: 0.8em;
+  font-weight: 200;
+  font-size: 3em;
+}
+
+div.head-items p {
+  line-height: 1.7em;
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: black;
+  margin-bottom: 4em;
+}
+
+div.head-items p a {
+  color: black;
+}
+
+/* items layout */
+
+div.items-layout {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 5em;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: auto;
+  justify-content: center;
+}
+
+div.box-items {
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  padding: 3em 3em;
+}
+
+/*bordes del grid*/
+
+div.box-items.first,
+div.box-items.second,
+div.box-items.fourth,
+div.box-items.fifth {
+  border-bottom: 0.13em solid #ddd;
+  border-right: 0.13em solid #ddd;
+}
+
+div.box-items.third,
+div.box-items.sixth,
+div.box-items.nineth,
+div.box-items.eighth,
+div.box-items.seventh {
+  border-bottom: 0.13em solid #ddd;
+}
+
+div.box-items.seventh,
+div.box-items.eighth,
+div.box-items.tenth,
+div.box-items.eleventh {
+  border-right: 0.13em solid #ddd;
+}
+
+div.box-items h5 {
+  font-weight: 300;
+  font-size: 2rem;
+  padding: 0.8em 0;
+}
+
+/*parrafo dentro de los items*/
+
+div.box-items p {
+  width: 70%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin: auto;
+  line-height: 1.5em;
+}
+/*iconos*/
+
+div.box-items i {
+  font-size: 2.5em;
+  padding: 0.9em;
+  border-radius: 50%;
+}
+
+span.circle {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+/* final de items */
+
+div.finishBorder {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10em;
+}
+
+/* parte illia */
+
+/*Para todo lo que hay dentro del main*/
+.div1principal{
+    /*width: 60%;*/
+    max-width: 1400px;
+    margin: auto; 
+}
+/*Para la linea horizontal que ocupa todo*/
+.lineaFuera{
+      border-bottom: .9px solid ;
+      color: #9f9f9f;
+      margin-top: 3em;
+      margin-bottom: 3em;
+}
+
+/*Para la linea horizontal de dentro (solo ocupa lo que esta en la parte derecha*/
+.linea{
+    width: 100%;
+    height: 1px;
+     border-bottom: 
+     .5px solid ;
+     color: #9f9f9f;
+    margin-bottom: 1.5em;
+     margin-top: 1.5em;
+}
+
+/*La clase todo es cada div que ocupa cada parte */
+.todo{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin: auto;
+    grid-gap: 0.5em 1em #cccccc;
+    width: 100%; 
+   }
+   /*Tamaño de grosor en los headings*/
+   h1{
+    font-weight: normal;
+   }
+   h2{
+    font-weight: lighter;
+   }
+   h3{
+    font-weight: lighter;
+   }
+   h4{
+    font-weight: lighter;
+   }
+   h5{
+    font-weight: lighter;
+   }
+   h6{
+    font-weight: lighter;
+   }
+
+   .leveluno{
+    font-size: 3rem;
+   }
+  
+   /*Tamaño para todos los parrafos*/
+   p, i {
+    font-size: 1.3rem;
+   }
+   .unordered{
+    font-size: 1.3rem;
+    font-weight: lighter;
+   }
+   .orderedlist{
+    font-size: 1.3rem;
+    font-weight: lighter;
+   }
+
+  
+ /*La clase additional solo es para la primera parte*/
+.additional {
+    text-align: center;
+    padding-bottom: 5em;
+    padding-top: 5em;
+    font-weight: lighter;
+}
+/*Elements es para darle tamaño a Additional Elements*/
+.Elements{
+    font-size: 4em;
+    margin-bottom: 1em;
+    font-weight: normal;
+}
+/*Para el cuadrado de la palabra for dentro de text*/
+.for{
+    background-color: #ecf0f1;
+    border-radius: .4rem;
+    padding: 3px 8px;
+}
+
+/*Solo es para los headings */
+ .headings{
+    font-size: 1.3em; 
+    font-weight: lighter;
+ } 
+ .level{
+    margin-bottom: 1em;
+    font-size: 2.5rem;
+    font-weight: lighter;
+ }
+ /*Para para los titulos de subtitle*/
+ .sub{
+    font-size: 2.6rem;
+    font-weight: normal;
+ }
+ .subtitle{
+    margin-top: 1.7em;
+    font-weight: lighter;
+ }
+ /*Para ordered list*/
+ .ordered{
+    margin-top:.8em;
+    margin-bottom: .8em;
+    font-weight: lighter;
+ }
+
+/*Dar color a los links*/
+a{
+    color: rgb(58, 57, 57) ;
+}
+
+/*Para los definition list*/
+.definition{
+    margin-top:1em;
+    margin-bottom: 1em;
+    margin-left: 3%;
+    font-weight: lighter;
+}
+/*Linea vertical del blockquote*/
+.blockquote{
+    border-left:.3em solid rgb(188, 188, 188); 
+    padding-left:2em;
+    height: 7em;
+    display: inline-block;
+
+
+}
+
+/*Para toda la parte izquierda*/
+.left{
+    padding: 20px;
+    font-size:2em;
+    font-weight:normal;
+}
+
+/*Para toda la parte derecha*/
+.right{
+float: right;
+padding: 20px;
+font-weight: normal;
+
+}
+
+/*Para el div que hay dentro de pre code*/
+ .while {
+    text-align: left;
+    background: #ecf0f1;
+    width: 100%;
+    border-radius: .5rem;
+    font-size: 1.3em;
+  }
 
 /* Iconos */
 
@@ -541,4 +1094,3 @@ footer .codespace {
   color: green;
   font-weight: bold;
 }
-

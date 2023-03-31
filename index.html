@@ -5,17 +5,582 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https: //fonts.googleapis.com/css2? & family= Source+Sans+Pro:wght@ 200;300;400;600 & mostrar=intercambiar"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/2756817423.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <main>
-      <!-- Iconos clase principal-->
+    <!-- Esta es la parte de Dani. Está formada por el "header", que actúa como contenedor de las 4 secciones "div". 
+      Cada uno de los 4 div incluye 2 partes: un div con texto y un div con una imagen. 
+      El primer div se llama "banner" y los otros 3: "spotlight1 ,2 y 3" respectivamente.-->
+
+    <header>
+      <!-- Aquí empieza banner, que incluye el primer texto y un tipo saltando al agua.-->
+      <div class="banner">
+        <div class="text-banner">
+          <!-- En este h1 he tenido que incluir iconos y spans para los efectos de la fuente.-->
+          <h1>
+            <i class="fa-solid fa-terminal"></i>
+            <span
+              style="
+                color: #e03636;
+                font-weight: 600;
+                font-style: italic;
+                letter-spacing: -0.3rem;
+              "
+              >CODE</span
+            >
+            <span style="font-weight: 300; font-style: italic">Team</span>
+          </h1>
+
+          <p class="p1">
+            A responsive single-page template (modular, highly modifiable)
+            designed by
+            <a href="https://codespaceacademy.com/">CODE SPACE</a> and released
+            for free under the
+            <a href="https://creativecommons.org/licenses/?lang=es_ES"
+              >Creative Commons</a
+            >.
+          </p>
+
+          <p class="p2">
+            This is a <span style="font-weight: 400">Banner</span> component,
+            and is usually used as an intro or opening statement. You can
+            customize its appearance with a number of modifiers, as well as
+            assifn it an optional <span class="word">onload</span> or
+            <span class="word">onscroll</span> transition modifier (<a
+              href="https://www.wordreference.com/es/translation.asp?tranword=detail"
+              >details</a
+            >).
+          </p>
+
+          <button>GET STARTED</button>
+        </div>
+
+        <div class="img-banner">
+          <img src="img/banner.jpg" alt="man jumping into the water" />
+        </div>
+      </div>
+
+      <!-- Aquí empieza spotlight1, la segunda sección, que incluye el segundo texto y la mano agarrando la taza.-->
+
+      <div class="spotlight1">
+        <div class="img-spotlight01">
+          <img src="img/spotlight01.jpg" alt="hand with coffee mug" />
+        </div>
+
+        <div class="text-spotlight1">
+          <h2>Spotlight</h2>
+
+          <p>
+            This is a <span style="font-weight: 400">Spotlight</span> element,
+            and it's generally used - as the name suggests - to highlight a
+            particular feature, subjet, or pretty much anything. You can
+            customise its appearance with a choice of modifiers, as well as
+            assign it an optional <span class="word">onload</span> or
+            <span class="word">onscroll</span> transition modifier (<a
+              href="https://www.wordreference.com/es/translation.asp?tranword=detail"
+              >details</a
+            >).
+          </p>
+
+          <button>LEARN MORE</button>
+        </div>
+      </div>
+
+      <!-- Aquí empieza spotlight2, la tercera sección, que incluye el tercer texto y la persona esperando en el aeropuerto.-->
+
+      <div class="spotlight2">
+        <div class="text-spotlight2">
+          <h2>Spotlight</h2>
+
+          <p>
+            This is also a
+            <span style="font-weight: 400">Spotlight</span> component, and it's
+            here because this app would look a bit empty with just one
+            spotlight. Like all spotlights, you can customise its appearance
+            with a choice of modifiers, as well as assign it an optional
+            <span class="word">onload</span> or
+            <span class="word">onscroll</span> transition modifier (<a
+              href="https://www.wordreference.com/es/translation.asp?tranword=detail"
+              >details</a
+            >).
+          </p>
+
+          <button>LEARN MORE</button>
+        </div>
+        <div class="img-spotlight02">
+         <img src="img/spotlight02.jpg" alt="person waiting in airport" /> 
+        </div>
+      </div>
+
+      <!-- Aquí empieza spotlight3, la cuarta sección, que incluye el cuarto texto y las manitas con el sol.-->
+
+      <div class="spotlight3">
+        <div class="img-spotlight03">
+          <img
+            src="img/spotlight03.jpg"
+            alt="hands forming a heart around sun"
+          />
+        </div>
+
+        <div class="text-spotlight3">
+          <h2>Spotlight</h2>
+
+          <p>
+            And yes, this is also a
+            <span style="font-weight: 400">Spotlight</span> component, and it's
+            also here in order to fill a bit of space. Naturally, like any other
+            spotlights, you can customise its appearance with a choice of
+            modifiers, as well as assign it an optional
+            <span class="word">onload</span> or
+            <span class="word">onscroll</span> transition modifier (<a
+              href="https://www.wordreference.com/es/translation.asp?tranword=detail"
+              >details</a
+            >).
+          </p>
+
+          <button>LEARN MORE</button>
+        </div>
+      </div>
+    </header>
+    <!-- comienzo gallery -->
+    <div class="gallery-division">
+      <!-- encabezado y parrafo -->
+      <div class="head-gallery">
+        <h2>Gallery</h2>
+        <p>
+          This is a <span class="bold">Gallery</span> component. It can behave
+          as a lightbox (when given the
+          <span class="lightbox">lightbox</span> class), and you can customise
+          its appearance with a numbers of modifiers, as well as assing it an
+          aptional <span class="lightbox">onload</span> or
+          <span class="lightbox">onscroll</span> transition modifier (<a
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+            class="underline"
+            >details</a
+          >).
+        </p>
+      </div>
+      <!-- carrete de fotos -->
+      <div class="images-gallery">
+        <div class="slideshow-gallery">
+          <img src="img/gallery/thumbs/01.jpg" alt="ojo azul" />
+        </div>
+        <div class="slideshow-gallery">
+          <img
+            src="img/gallery/thumbs/02.jpg"
+            alt="hombre flotando en el mar"
+          />
+        </div>
+        <div class="slideshow-gallery">
+          <img src="img/gallery/thumbs/03.jpg" alt="teclado de ordenador" />
+        </div>
+        <div class="slideshow-gallery">
+          <img src="img/gallery/thumbs/04.jpg" alt="cubo rubik hexagonal" />
+        </div>
+        <!-- <div class="slideshow-gallery">
+          <img src="img/gallery/thumbs/05.jpg" alt="spiderman leyendo" />
+        </div>
+        <div class="slideshow-gallery">
+          <img src="img/gallery/thumbs/06.jpg" alt="avioneta" />
+        </div>
+        <div class="slideshow-gallery">
+         <-- <img src="img/gallery/thumbs/07.jpg" alt="mapa" /> -->
+        </div>
+      </div>
+    </div>
+    <!-- fin de seccion Gallery -->
+    <!-- comienzo seccion items -->
+    <div class="items-division">
+      <!-- encabezado y parrafo-->
+      <div class="head-items">
+        <h2>Items</h2>
+        <p>
+          This is an <span class="bold">Items</span> component, and it's
+          essentially a grid for organising elements of various types. You can
+          customize it appearance with a choice of modifiers, as well as assing
+          it an optional <span class="lightbox">onload</span> or
+          <span class="lightbox">onscroll</span> transition modifier (<a
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+            >details</a
+          >).
+        </p>
+      </div>
+      <!-- comienzo items grid -->
+      <div class="items-layout">
+        <!--comienza grid-->
+        <div class="box-items first">
+          <span class="circle"><i class="fa-regular fa-gem"></i></span>
+          <h5>One</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora vel
+            nostrum temporibus animi illum iure id labore enim voluptatibus?
+            Magni neque illum reiciendis inventore culpa.
+          </p>
+        </div>
+        <div class="box-items second">
+          <span class="circle"><i class="fa-solid fa-floppy-disk"></i></span>
+          <h5>Two</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            voluptates, vitae, exercitationem officia aliquam error temporibus
+            sit quod quae ab voluptatum nulla placeat, repellat maxime.
+          </p>
+        </div>
+        <div class="box-items third">
+          <span class="circle"><i class="fa-solid fa-chart-bar"></i></span>
+          <h5>Three</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem,
+            libero perferendis. Quas quibusdam reiciendis accusantium. Earum
+            blanditiis quibusdam dolor eos. Neque iure ullam corrupti sequi?
+          </p>
+        </div>
+        <div class="box-items fourth">
+          <span class="circle"><i class="fa-solid fa-wifi"></i></span>
+          <h5>Four</h5>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora
+            nesciunt commodi numquam cum, inventore obcaecati laboriosam quo,
+            perferendis quae nisi nihil ipsam repellendus voluptatibus nemo?
+          </p>
+        </div>
+        <div class="box-items fifth">
+          <span class="circle"><i class="fa-solid fa-gear"></i></span>
+          <h5>Five</h5>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Exercitationem vitae sit illo illum doloremque nam, itaque iusto!
+            Error soluta eius ut id dicta et. At id quaerat dignissimos odit
+            obcaecati.
+          </p>
+        </div>
+        <div class="box-items sixth">
+          <span class="circle"><i class="fa-regular fa-paper-plane"></i></span>
+          <h5>Six</h5>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
+            voluptatibus ad deserunt asperiores maiores est esse consectetur
+            perferendis assumenda eos, praesentium atque, dolores et vitae?
+          </p>
+        </div>
+        <div class="box-items seventh">
+          <span class="circle"><i class="fa-solid fa-desktop"></i></span>
+          <h5>Seven</h5>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem,
+            nobis provident. A molestias corrupti dolorem, at laboriosam quae,
+            consequuntur nisi nihil sint explicabo voluptas iste?
+          </p>
+        </div>
+        <div class="box-items eighth">
+          <span class="circle"><i class="fa-solid fa-rotate"></i></span>
+          <h5>Eight</h5>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae animi
+            qui quas dolore non! Nam praesentium veritatis facilis eum
+            laboriosam mollitia in quam adipisci aliquam.
+          </p>
+        </div>
+        <div class="box-items nineth">
+          <span class="circle"><i class="fa-solid fa-hashtag"></i></span>
+          <h5>Nine</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+            maxime. Enim, non maxime fugiat sunt asperiores vitae atque iste?
+            Assumenda cum explicabo facilis magni libero.
+          </p>
+        </div>
+        <div class="box-items tenth">
+          <span class="circle"><i class="fa-solid fa-bolt"></i></span>
+          <h5>Ten</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+            maxime. Enim, non maxime fugiat sunt asperiores vitae atque iste?
+            Assumenda cum explicabo facilis magni libero.
+          </p>
+        </div>
+        <div class="box-items eleventh">
+          <span class="circle"><i class="fa-regular fa-envelope"></i></span>
+          <h5>Eleven</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+            maxime. Enim, non maxime fugiat sunt asperiores vitae atque iste?
+            Assumenda cum explicabo facilis magni libero.
+          </p>
+        </div>
+        <div class="box-items twelfth">
+          <span class="circle"><i class="fa-solid fa-leaf"></i></span>
+          <h5>Twelve</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+            maxime. Enim, non maxime fugiat sunt asperiores vitae atque iste?
+            Assumenda cum explicabo facilis magni libero.
+          </p>
+        </div>
+        <!--fin de grid-->
+      </div>
+      <!-- fin de items -->
+      <div class="finishBorder"></div>
+    </div>
+<!-- IliaAltea -->
+        <div class="div1principal">
+        <!-- Primera parte additional elements -->
+        <div class="additional">
+          <h1 class="Elements">Additional Elements</h1>
+
+          <div>
+            <p>
+               Finally, here are some additional items that you <i>may</i>  find useful
+              (and yes, they go well with any look).
+            </p>
+          </div>
+        </div>
+        <!--Segunda parte Text-->
+        <div class="todo">
+          <div><h3 class="left">Text</h3></div>
+          <div class="right">
+            <p>
+               This is <b>bold</b> and this is <strong>strong</strong>. This is
+             is <i>italic</i> and this is <em>emphasized</em>.this is  <sup>superscript</sup> text and
+               this is <sub>subescript</sub> text.This is <a href="underlined">underlined</a> and this is code:
+              <code><span class="for"> for (;;)  { ... }  </span></code>.Finally,this is a
+              <a href="link">link</a>.
+              </p>
+          </div>
+        </div>
+         <!--Linea horizontal-->
+        <div class="lineaFuera"></div>
+        <!--bloque 1 heading-->
+
+        <div class="todo">
+          <div><h3 class="left">Headings</h3></div>
+          <div class="right">
+            <div class="headings">
+            <div class="leveluno"><h1>HeadingLevel 1</h1></div>
+            <div class="level"><h2>HeadingLevel 2</h2></div>
+            <div class="level"><h3>HeadingLevel 3</h3></div>
+            <div class="level"><h4>HeadingLevel 4</h4></div>
+            <div class="level"><h5>HeadingLevel 5</h5></div>
+            <div class="level"><h6>HeadingLevel 6</h6></div>
+          </div>
+            <!--Linea horizontal-->
+            <div class="linea"></div>
+
+            <!--bloque 2 heading-->
+
+            <div class="sub"><h1>Heading with a Subtitle</h1></div>
+            
+            <i> Lorem ipsum dolor sit amet consectetur adipisicing elit.</i>
+            <p class="subtitle">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              modi officiis corrupti dolorem veritatis. Iusto perferendis at
+              consectetur officiis vero itaque est quaerat culpa doloremque
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis 
+              animi impedit tenetur magnam laudantium architecto molestiae similique
+               placeat! Rem, magni?
+            </p>
+          
+            <!--Linea horizontal-->
+            <div class="linea"></div>
+            <!--bloque 3 heading-->
+            <div class="sub"><h2>Heading with a Subtitle</h2></div>
+            
+          <i> Lorem ipsum dolor sit amet nullam id egestas urna aliquam</i>
+
+            <p class="subtitle">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              modi officiis corrupti dolorem veritatis. Iusto perferendis at
+              consectetur officiis vero itaque est quaerat culpa doloremque
+              deserunt, iste voluptates. Facilis, cumque! Beatae atque, possimus
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis 
+              animi impedit tenetur magnam laudantium architecto molestiae similique
+               placeat! Rem, magni?
+            </p>
+            
+            <!--Linea horizontal-->
+            <div class="linea"></div>
+
+            <!--bloque 4 heading-->
+
+            <div class="sub"><h3>Heading with a Subtitle</h3></div>
+
+          <i> Lorem ipsum dolor sit amet nullam id egestas urna aliquam</i>
+
+            <p class="subtitle">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              modi officiis corrupti dolorem veritatis. Iusto perferendis at
+              consectetur officiis vero itaque est quaerat culpa doloremque
+              deserunt, iste voluptates. Facilis, cumque! Beatae atque, possimus
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis 
+              animi impedit tenetur magnam laudantium architecto molestiae similique
+               placeat! Rem, magni?
+            </p>
+
+            <!--Linea horizontal-->
+            <div class="linea"></div>
+
+            <!--bloque 5 heading-->
+            <div class="sub"><h4>Heading with a Subtitle</h4></div>
+            <i> Lorem ipsum dolor sit amet nullam id egestas urna aliquam</i>
+
+            <p class="subtitle">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              modi officiis corrupti dolorem veritatis. Iusto perferendis at
+              consectetur officiis vero itaque est quaerat culpa doloremque
+              deserunt, iste voluptates. Facilis, cumque! Beatae atque, possimus
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque impedit
+             quos magni consequuntur repellat assumenda.
+             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis 
+             animi impedit tenetur magnam laudantium architecto molestiae similique
+              placeat! Rem, magni?
+            </p>
+          
+          <!--Linea horizontal-->
+        </div>
+    </div>
+        <div class="lineaFuera"></div>
+
+        <!-- Parte Hunordered-->
+        <div class="todo">
+         <div><h3 class="left">Unordered List</h3></div>
+
+          <div class="right">
+            <div class="unordered">
+            <ul<p>Defauld</p>
+              <li class="subtitle">Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </div>
+            <p class="subtitle">Alternate</p>
+
+            <p class="subtitle"> Lorem ipsum dolor sit amet.</p>
+            <div class="linea"></div>
+            <p> Lorem ipsum dolor sit amet.</p>
+            <div class="linea"></div>
+            <p>Lorem ipsum dolor sit amet.</p> 
+            <div class="linea"></div>
+            <p> Lorem ipsum dolor sit amet.</p>
+            <div class="linea"></div>
+           <p> Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="lineaFuera"></div>
+
+        <!--Parte ordered list-->
+        <div class="todo">
+          <div><h3 class="left">Ordered list</h3></div>
+
+          <div class="right">
+            <div class="orderedlist">
+            <ol>
+              <li class="ordered">Lorem ipsum dolor sit amet.</li>
+              <li class="ordered">Lorem ipsum dolor sit amet.</li>
+              <li class="ordered">Lorem ipsum dolor sit amet.</li>
+              <li class="ordered">Lorem ipsum dolor sit amet.</li>
+              <li class="ordered">Lorem ipsum dolor sit amet.</li>
+              <li class="ordered">Lorem ipsum dolor sit amet.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <!--Linea horizontal-->
+        <div class="lineaFuera"></div>
+
+        <!--Parte Definition list-->
+        <div class="todo">
+          <div><h3 class="left">Definition list</h3></div>
+
+          <div class="right">
+            
+            <p><strong>Lorem ipsum dolor sit amet.</strong></p>
+            <p class="definition">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              adipisci, deleniti id totam, temporibus quod corporis ullam, nobis
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam alias nisi ullam suscipit magnam similique modi, recusandae vitae necessitatibus esse.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, qui distinctio? Magnam a voluptatem nisi ea necessitatibus dignissimos eius nihil dolore odio, libero excepturi maxime voluptates facere asperiores dolores perspiciatis!
+            </p>
+            <p><strong>Lorem ipsum dolor sit amet.</strong></p>
+            <p class="definition">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. At sequi
+              labore, laboriosam aspernatur exercitationem laborum esse vel
+              maxim Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse praesentium nulla repellendus voluptatum corporis! Expedita officiis esse omnis vitae reiciendis hic quas exercitationem, nesciunt mollitia maiores accusantium, nisi ratione dolorum?
+            </p>
+            <p><strong>Lorem ipsum dolor sit amet.</strong></p>
+            <p class="definition">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea
+              architecto dolores vitae quisquam sint praesentium in facere unde Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi earum ipsam culpa soluta ex aliquid quae quis repudiandae laudantium? Rerum voluptatibus dolorum officiis officia eum, quasi natus soluta aperiam libero.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos voluptates unde. Nam, sit tempore. Similique ut unde autem dicta!
+            </p>
+          </div>
+        </div>
+        <!--Linea horizontal-->
+        <div class="lineaFuera"></div>
+
+        <!--Parte blockuote-->
+        <div class="todo">
+          <div><h3 class="left">Blockquote</h3></div>
+
+          <div class="right">
+            <blockquote class="blockquote">
+             <i>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Commodi laborum, aliquid animi accusamus cumque aliquam adipisci
+                provident aperiam? Laudantium, ab suscipit voluptate consequatur
+                harum aperiam aliquid iure provident distinctio rem at soluta
+               
+             </i>
+            </blockquote>
+          </div>
+        </div>
+        <!--Linea horizontal-->
+        <div class="lineaFuera"></div>
+        <!--Parte de Code-->
+        <div class="todo">
+          <div><h3 class="left">Code</h3></div>
+
+
+          <div class="right">
+          <div class="while">
+            <pre><code>
+            
+  i=0;
+
+
+
+   while (!deck.IsInOrder()){
+
+       print `Iteration `+ i;
+
+       deck.shuffle();
+
+       i++;
+  }
+
+
+
+  Print  `It took`  +  i  +  ` interations to sort the deck . ` ;
+           
+            </code></pre>     
+              </div> 
+          
+        </div>
+        </div> 
+        <div class="lineaFuera"></div>
+  <!-- Iconos clase principal-->
       <div class="principaliconos">
         <h3 class="h3texto">Icons</h3>
         <div class="style1">
@@ -399,7 +964,7 @@
           </h4>
         </div>
       </div>
-    </footer>
+    </footer>     
   </body>
   <script
     src="https://kit.fontawesome.com/3d3a3461c1.js"
@@ -410,3 +975,4 @@
     crossorigin="anonymous"
   ></script>
 </html>
+
