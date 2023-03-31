@@ -28,14 +28,16 @@ body {
   margin: auto;
   font-family: "Inter", sans-serif;
 }
-body, header, main, footer {
+body,
+header,
+main,
+footer {
   width: 100%;
 }
 
-section{
+/* section {
   max-width: 1400px;
-
-}
+} */
 
 /* Iconos */
 
@@ -43,20 +45,23 @@ span.style2 {
   display: block;
   margin-bottom: 1em;
   margin-top: 1em;
+  letter-spacing: -2px;
 }
 span.style1 {
   display: block;
   margin-bottom: 1em;
+  letter-spacing: -2px;
 }
 div.principaliconos {
   text-align: left;
-  width: 75%;
+  width: 70%;
   margin: auto;
   padding: 3em 0;
   border-bottom: 2px solid #ececec;
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-column-gap: 1em;
+  font-size: 2.3rem;
 }
 div.iconosnormales i {
   padding: 0.5em;
@@ -66,8 +71,8 @@ div.iconosnormales i:hover {
   color: var(--cyan);
 }
 span.circle {
-  width: 40px;
-  height: 40px;
+  width: 70px;
+  height: 70px;
   border: 1px solid #ddd;
   border-radius: 50%;
   display: flex;
@@ -99,19 +104,22 @@ div.iconoscirculo span.circle i:hover {
 h3.h3texto {
   text-align: left;
   font-weight: lighter;
+  font-size: 2.3rem;
+
 }
 
 /*  Botones */
 
 div.fbuttons {
   text-align: left;
-  width: 75%;
+  width: 70%;
   margin: auto;
   padding: 3em 0;
   border-bottom: 2px solid #ececec;
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-column-gap: 1em;
+  font-size: 2.3rem;
 }
 div button {
   border: 1px solid gainsboro;
@@ -144,7 +152,6 @@ div.buttons3 button {
 }
 div.buttons4 button {
   border-radius: 3em;
-  font-size: 0.6rem;
   margin: 1em;
   padding: 0.6em 3.8em;
 }
@@ -187,25 +194,25 @@ div.buttons6 button {
 
 div.factions {
   text-align: left;
-  width: 75%;
+  width: 70%;
   margin: auto;
   padding: 3em 0;
   border-bottom: 2px solid #ececec;
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-column-gap: 1em;
+  font-size: 2.3rem;
 }
 div.factions button:hover {
   background-color: var(--cyan);
 }
 div.actions1 button {
   margin: 1em 1em 3em 0;
-  padding: 2em 3em;
+  padding: 1.3em 3em;
   border-radius: 3em;
 }
 .asmall {
   margin: 1em 1em 2em 0;
-  font-size: 1rem;
   background-color: white;
   color: black;
   border-color: black;
@@ -259,17 +266,22 @@ div.actions1 button {
 
 div.fform {
   text-align: left;
-  width: 75%;
+  width: 70%;
   margin: auto;
   padding: 3em 0;
   border-bottom: 2px solid #ececec;
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-column-gap: 1em;
+  font-size: 2rem;
+  
 }
 form div div input {
   border: 1px solid #ececec;
+  padding: 1.6em;
   margin-right: 2em;
+  min-width: 400px;
+  border-radius: 0.3em;
   display: inline-block;
 }
 form div input:focus {
@@ -288,16 +300,12 @@ textarea:focus {
   border: 1.5px solid var(--cyan);
   text-align: left;
 }
+form{
+  width: 100%;
+}
 form div {
   display: flex;
   flex-direction: row;
-}
-
-form div input {
-  border-radius: 0.2em;
-  padding: 0.2em 0em;
-  margin-top: 1em;
-  margin-bottom: 1em;
 }
 div form div.selector {
   display: flex;
@@ -305,18 +313,19 @@ div form div.selector {
   margin-bottom: 1.8em;
 }
 div form div.selector select#Category {
+  font-size: 1.9rem;
   background-color: var(--white);
   border: 1px solid #ececec;
   padding: 0.4em;
+  border-radius: 0.3em;
   margin: 0.9em 0;
 }
-
 div form div.selector select#Category:focus {
   border: 1.5px solid var(--cyan);
   border-radius: 0.3em;
 }
 div.radios {
-  font-size: 0.8em;
+  font-size: 1.9rem;
   margin-bottom: 2em;
   justify-content: space-between;
 }
@@ -330,7 +339,7 @@ div.checks label.checkbox {
   align-content: center;
 }
 div label.checkbox {
-  font-size: 0.9rem;
+  font-size: 1.9rem;
 }
 label.checkbox input {
   margin-right: 1em;
@@ -339,17 +348,18 @@ label.checkbox input {
 /* Tabla */
 div.ftable {
   text-align: left;
-  width: 75%;
+  width: 70%;
   margin: auto;
   padding: 3em 0;
   border-bottom: 2px solid #ececec;
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-column-gap: 1em;
+  font-size: 2rem;
 }
 table tr td {
   border-top: 1.5px solid var(--gray);
-  padding: 0.5em;
+  padding: 1em 0.5em;
   /* border-bottom: 1px solid black; */
 }
 table {
@@ -377,7 +387,6 @@ form button.disabled {
   margin-top: 3em;
   padding: 1em 1.8em;
 }
-
 /* parte pol */
 
 div.imagesCollumnLeft{
@@ -496,6 +505,7 @@ div.boxCollumnRight{
 /*footer*/
 footer{
   text-align: center;
+  background-color: #6610f2;
 }
 .footer-icons:hover {
   background: white;
@@ -522,3 +532,4 @@ footer .codespace {
   color: green;
   font-weight: bold;
 }
+
