@@ -1,19 +1,15 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+   
+  }
+  
 :root {
-    --blue: #0d6efd;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #d63384;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #198754;
-    --teal: #20c997;
-    --cyan: #0dcaf0;
     --white: #fff;
     --gray: #adb5bd;
-    font-size: 0.785rem;
-    font-family: "Source Sans Pro", "Inter", sans-serif;
-    font-weight: 200;
   }
 /*La font-family en el body para que se aplique a todo */
 body{
@@ -25,7 +21,8 @@ body{
 
 /*Para todo lo que hay dentro del main*/
 .div1principal{
-    width: 60%;
+    /*width: 60%;*/
+    max-width: 1400px;
     margin: auto; 
 }
 /*Para la linea horizontal que ocupa todo*/
@@ -54,9 +51,45 @@ body{
     margin: auto;
     grid-gap: 0.5em 1em #cccccc;
     width: 100%; 
-    font-size:1.2em; 
+   }
+   /*Tamaño de grosor en los headings*/
+   h1{
+    font-weight: normal;
+   }
+   h2{
+    font-weight: lighter;
+   }
+   h3{
+    font-weight: lighter;
+   }
+   h4{
+    font-weight: lighter;
+   }
+   h5{
+    font-weight: lighter;
+   }
+   h6{
+    font-weight: lighter;
    }
 
+   .leveluno{
+    font-size: 3rem;
+   }
+  
+   /*Tamaño para todos los parrafos*/
+   p, i {
+    font-size: 1.3rem;
+   }
+   .unordered{
+    font-size: 1.3rem;
+    font-weight: lighter;
+   }
+   .orderedlist{
+    font-size: 1.3rem;
+    font-weight: lighter;
+   }
+
+  
  /*La clase additional solo es para la primera parte*/
 .additional {
     text-align: center;
@@ -68,28 +101,7 @@ body{
 .Elements{
     font-size: 4em;
     margin-bottom: 1em;
-}
-.sub{
-    font-size: 2em;
-    font-weight: lighter;
-}
-h1{
-    font-weight: lighter;
-}
-h2{
-    font-weight: lighter;
-}
-h3{
-    font-weight: lighter;
-}
-h4 {
-    font-weight: lighter;
-}
-h5{
-    font-weight: lighter;
-}
-h6{
-    font-weight: lighter;
+    font-weight: normal;
 }
 /*Para el cuadrado de la palabra for dentro de text*/
 .for{
@@ -100,10 +112,18 @@ h6{
 
 /*Solo es para los headings */
  .headings{
-    font-size: 2.5em; 
+    font-size: 1.3em; 
+    font-weight: lighter;
  } 
  .level{
     margin-bottom: 1em;
+    font-size: 2.5rem;
+    font-weight: lighter;
+ }
+ /*Para para los titulos de subtitle*/
+ .sub{
+    font-size: 2.6rem;
+    font-weight: normal;
  }
  .subtitle{
     margin-top: 1.7em;
@@ -132,14 +152,16 @@ a{
 .blockquote{
     border-left:.3em solid rgb(188, 188, 188); 
     padding-left:2em;
-    height: 6em;
+    height: 7em;
+    display: inline-block;
+
 
 }
 
 /*Para toda la parte izquierda*/
 .left{
     padding: 20px;
-    font-size:1.7em;
+    font-size:2em;
     font-weight:normal;
 }
 
@@ -157,7 +179,8 @@ font-weight: normal;
     background: #ecf0f1;
     width: 100%;
     border-radius: .5rem;
-}
+    font-size: 1.3em;
+  }
 
-
+ 
 
