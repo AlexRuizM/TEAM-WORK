@@ -26,10 +26,12 @@
 }
 
 body {
-  max-width: 1400px;
+ /*  max-width: 1400px; */
   margin: auto;
   /* font-family: "Inter", sans-serif; */
-
+}
+div .item-division{
+  max-width: 1400px;
 }
 
 header{
